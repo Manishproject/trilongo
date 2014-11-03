@@ -1,0 +1,64 @@
+
+
+<?php
+if (!empty($all_product)) {
+    foreach ($all_product as $product) {
+        ?>
+        <tr class="odd gradeX">
+            <td><?php echo $product['Product']['id']; ?></td>
+            <td>
+                <?php
+                $product_image = $product['Product']['product_image'];
+                $path = realpath('data/product_image/' . $product_image);
+                if (!empty($product_image) && file_exists($path)) {
+                    echo $this->Image->resize('data/product_image/' . $product_image, 75, 75, true, false);
+                } else {
+                    echo $this->Image->resize('data/product_image/default.jpg', 75, 75, true, false);
+                }
+                ?> 
+            </td>
+            <td class="hidden-480">
+                <?php echo $this->Html->link($product['Product']['name'], array('controller' => 'labs', 'action' => 'create_new_user/' . $product['Product']['id'])); ?></td>
+            <td class="hidden-480"><?php echo substr($product['Product']['description'], 0, 20); ?></td>
+            <td class="hidden-480"><?php echo isset($product['User']['first_name']) ? $product['User']['first_name'] : ".."; ?></td>
+            <td class="hidden-480"><?php echo $product['Product']['price']; ?></td>
+            <td class="hidden-480"><?php echo $product['Product']['quantity']; ?></td>
+            <td class="hidden-480"><?php echo $product['Product']['reserve_quantity']; ?> </td>
+            <td class="hidden-480" id="<?php echo "st_" . $product['Product']['id']; ?>">
+                <?php
+                if ($product['Product']['status'] == 0) {
+                    echo "Deactivate";
+                } elseif ($product['Product']['status'] == 1) {
+                    echo "Active ";
+                } elseif ($product['Product']['status'] == 2) {
+                    echo "Deactive by user ";
+                } else {
+                    echo "Not available";
+                }
+                ?>
+            </td>
+            <td class="hidden-480"><?php echo $this->Lab->ShowDate($product['Product']['created']); ?></td>
+            <td >
+                <div class="btn-group">
+                    <a data-toggle="dropdown" href="#" class="btn purple">
+                        <i class="icon-user"></i> Settings
+                        <i class="icon-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ><?php echo $this->Html->link('<i class="icon-plus"></i> Edit', array('controller' => 'labs', 'action' => 'create_new_user/' . $product['Product']['id']), array('class' => '', 'escape' => false)); ?></li>
+                        <?php if ($product['Product']['status'] == 2 || $product['Product']['status'] == 0) { ?>
+                            <li id="<?php echo "sp_" . $product['Product']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $product['Product']['id']; ?>, 1)"><i class="icon-remove"></i> <span>Active</span> </a></li>
+                        <?php } elseif ($product['Product']['status'] == 1) { ?>
+                            <li id="<?php echo "sp_" . $product['Product']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $product['Product']['id']; ?>, 0)"><i class="icon-remove"></i> <span>Deactivate</span> </a></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <?php
+    }
+} else {
+    ?> 
+    <tr><td colspan="12" class="mid"> No Product  found </td></tr>
+<?php } ?>
+

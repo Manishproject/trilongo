@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio
+END
+Capability.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Capability.php
+END
+TinyHttp.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/TinyHttp.php
+END
+AutoPagingIterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/AutoPagingIterator.php
+END
+RestException.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/RestException.php
+END
+ListResource.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/4436/app/Vendor/sms/Services/Twilio/ListResource.php
+END
+PartialApplicationHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/PartialApplicationHelper.php
+END
+Resource.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Resource.php
+END
+Page.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Page.php
+END
+InstanceResource.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/InstanceResource.php
+END
+RequestValidator.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/RequestValidator.php
+END
+Twiml.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Twiml.php
+END

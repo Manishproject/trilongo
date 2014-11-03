@@ -1,0 +1,74 @@
+<table class="table table-striped table-bordered table-hover" id="sample_1">
+<?php
+	$tableHeaders = $this->Html->tableHeaders(array(
+		$this->Paginator->sort('id', __d('Labs', 'Id')),
+		$this->Paginator->sort('title', __d('Labs', 'Title')),
+		$this->Paginator->sort('description', __d('Labs', 'Description')),
+		$this->Paginator->sort('alias', __d('Labs', 'Alias')),
+		$this->Paginator->sort('status', __d('Labs', 'Status')),
+		$this->Paginator->sort('global', __d('Labs', 'Global')),
+		$this->Paginator->sort('created'),
+		$this->Paginator->sort('updated'),
+		__d('Taxonomy', 'Actions'),
+	));
+?>
+	<thead>
+		<?php echo $tableHeaders; ?>
+	</thead>
+<?php
+
+	$rows = array();
+	foreach ($retailer_menus as $retailer_menu) :
+		$actions = array();
+
+		$actions[] = $this->Html->link('<i class="icon-eye-open"></i> view',
+				array( 'action' => 'product_list', $retailer_menu['RetailerMenu']['id']),
+			array('icon' => 'pencil', 'tooltip' => __d('Labs', 'View terms'),'escape'=>false,'class'=>'btn mini purple')
+		);
+		
+		
+	 $actions[] = $this->Html->link('<i class="icon-edit"></i> Edit',
+			array('action' => 'retailer_menu_edit', $retailer_menu['RetailerMenu']['id']),
+			array('icon' => 'pencil', 'tooltip' => __d('Labs', 'Edit this item'),'escape'=>false,'class'=>'btn mini purple')
+		);
+		
+
+
+		$actions = $this->Html->div('item-actions', implode(' ', $actions));
+	 
+		$status= ($retailer_menu['RetailerMenu']['status'] == 1)?"Published":"Draft";	 
+	    $status= '<a href="javascript:void(0);" id="Page_list_'.$retailer_menu['RetailerMenu']['id'].'" onclick="change_status('.$retailer_menu['RetailerMenu']['id'].')" title="Click here to change status">'.$status.'</a>';
+	
+	    $global= ($retailer_menu['RetailerMenu']['global'] == 1)?"TRUE":"False";
+	    	 
+		$rows[] = array(
+			$retailer_menu['RetailerMenu']['id'],
+			
+			$this->Html->link($retailer_menu['RetailerMenu']['name'], array('action' => 'product_list', $retailer_menu['RetailerMenu']['id'])),
+			$retailer_menu['RetailerMenu']['description'],
+			$retailer_menu['RetailerMenu']['alias'],
+			$status,
+			$global,
+			date('M-d-Y',strtotime($retailer_menu['RetailerMenu']['created'])),
+			date('M-d-Y',strtotime($retailer_menu['RetailerMenu']['updated'])),
+			$actions,
+		);
+	endforeach;
+	
+?>
+
+<?php if($rows){
+echo $this->Html->tableCells($rows);
+}else {	?>
+<tr>
+	<td class="mid" colspan="6">No RetailerMenu found</td>
+</tr>
+<?php }?>
+
+</table>
+							
+  <div class="span6">
+     <div class="pagination pagination-large">
+      <?php echo $this->Paginator->numbers(array('first' => 2, 'last' => 2));?>
+     </div>
+  </div>	

@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/fkb/!svn/ver/124/tags/app/View/Labs
+END
+admin_reservations_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/fkb/!svn/ver/123/tags/app/View/Labs/admin_reservations_search.ctp
+END
+admin_edit_deal.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_edit_deal.ctp
+END
+admin_retailers_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/fkb/!svn/ver/90/tags/app/View/Labs/admin_retailers_search.ctp
+END
+admin_create_new_ad.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/fkb/!svn/ver/147/tags/app/View/Labs/admin_create_new_ad.ctp
+END
+admin_reservations.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/123/tags/app/View/Labs/admin_reservations.ctp
+END
+admin_all_user.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_all_user.ctp
+END
+admin_retailer_availability.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/fkb/!svn/ver/147/tags/app/View/Labs/admin_retailer_availability.ctp
+END
+admin_payments.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/fkb/!svn/ver/111/tags/app/View/Labs/admin_payments.ctp
+END
+admin_retailer_menu.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/74/tags/app/View/Labs/admin_retailer_menu.ctp
+END
+admin_product_list.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/fkb/!svn/ver/82/tags/app/View/Labs/admin_product_list.ctp
+END
+admin_users_review.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/124/tags/app/View/Labs/admin_users_review.ctp
+END
+admin_all_product.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_all_product.ctp
+END
+admin_index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_index.ctp
+END
+admin_all_ads.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/fkb/!svn/ver/147/tags/app/View/Labs/admin_all_ads.ctp
+END
+admin_product_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/fkb/!svn/ver/140/tags/app/View/Labs/admin_product_search.ctp
+END
+admin_retailer_menu_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/fkb/!svn/ver/67/tags/app/View/Labs/admin_retailer_menu_search.ctp
+END
+admin_edit_product.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_edit_product.ctp
+END
+admin_edit_ads.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/fkb/!svn/ver/147/tags/app/View/Labs/admin_edit_ads.ctp
+END
+admin_deal_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_deal_search.ctp
+END
+admin_retailer_availability_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/fkb/!svn/ver/147/tags/app/View/Labs/admin_retailer_availability_search.ctp
+END
+admin_users_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/140/tags/app/View/Labs/admin_users_search.ctp
+END
+admin_new_retailer_request.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/fkb/!svn/ver/90/tags/app/View/Labs/admin_new_retailer_request.ctp
+END
+admin_edit_user.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_edit_user.ctp
+END
+admin_create_retailer_availability.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/fkb/!svn/ver/147/tags/app/View/Labs/admin_create_retailer_availability.ctp
+END
+admin_all_deal.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_all_deal.ctp
+END
+admin_create_new_user.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_create_new_user.ctp
+END
+admin_all_retailer.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_all_retailer.ctp
+END
+admin_retailer_menu_add.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/fkb/!svn/ver/134/tags/app/View/Labs/admin_retailer_menu_add.ctp
+END
+admin_edit_retailer_availability.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_edit_retailer_availability.ctp
+END
+admin_view_product.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/164/tags/app/View/Labs/admin_view_product.ctp
+END
+admin_subscriptions.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/fkb/!svn/ver/86/tags/app/View/Labs/admin_subscriptions.ctp
+END
+admin_ads_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/fkb/!svn/ver/147/tags/app/View/Labs/admin_ads_search.ctp
+END
+admin_payments_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/fkb/!svn/ver/111/tags/app/View/Labs/admin_payments_search.ctp
+END
+admin_review_retailers.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/fkb/!svn/ver/103/tags/app/View/Labs/admin_review_retailers.ctp
+END

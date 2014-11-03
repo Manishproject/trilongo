@@ -1,0 +1,23 @@
+<?php if(!empty($all)){
+	foreach ($all as $list){ //ec($list);?>
+<tr class="odd gradeX">
+	<td><?php echo $list['Payment']['id'];?></td>
+	<td><?php echo $list['Retailer']['business_name'];?></td>
+
+	<td class="hidden-480"><?php echo $list['Subscription']['name'];?></td>
+	<td class="hidden-480"><?php echo $list['Payment']['amount'];?></td>
+	<td class="hidden-480"><?php 
+	if($list['Payment']['type'] == 1){ echo __('Initial'); }
+	elseif($list['Payment']['type'] == 2){ echo __('Schedule'); }
+	else{ echo __('Recurring'); } ?></td>
+	<td class="hidden-480"><?php echo $this->Lab->ShowDate($list['Payment']['start_date']);?></td>
+	<td class="hidden-480"><?php echo $this->Lab->ShowDate($list['Payment']['end_date']);?></td>
+	<td class="hidden-480"><?php echo $this->Lab->ShowDate($list['Payment']['created']);?></td>
+	<td><!--<a href="<?php echo SITEURL."admin/labs/review_retailers/".$list['Payment']['id']?>" class="btn mini green-stripe">View</a>
+											--></td>
+</tr>
+	<?php }}else{?>
+<tr>
+	<td colspan="9" class="mid">record not found</td>
+</tr>
+	<?php }?>

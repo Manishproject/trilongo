@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest
+END
+ConnectApp.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/ConnectApp.php
+END
+Conferences.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Conferences.php
+END
+Members.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Members.php
+END
+Member.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Member.php
+END
+Conference.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Conference.php
+END
+Call.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Call.php
+END
+Participants.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Participants.php
+END
+OutgoingCallerIds.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/OutgoingCallerIds.php
+END
+AuthorizedConnectApps.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/AuthorizedConnectApps.php
+END
+Transcriptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Transcriptions.php
+END
+Recordings.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Recordings.php
+END
+Applications.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Applications.php
+END
+AvailablePhoneNumbers.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/AvailablePhoneNumbers.php
+END
+Accounts.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Accounts.php
+END
+Notifications.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Notifications.php
+END
+Notification.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Notification.php
+END
+Account.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Account.php
+END
+SmsMessage.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/SmsMessage.php
+END
+Recording.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Recording.php
+END
+Participant.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Participant.php
+END
+ConnectApps.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/ConnectApps.php
+END
+IncomingPhoneNumbers.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/IncomingPhoneNumbers.php
+END
+Queues.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Queues.php
+END
+SmsMessages.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/SmsMessages.php
+END
+Sandbox.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Sandbox.php
+END
+ShortCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/ShortCode.php
+END
+ShortCodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/ShortCodes.php
+END
+AvailablePhoneNumber.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/AvailablePhoneNumber.php
+END
+Application.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Application.php
+END
+IncomingPhoneNumber.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/IncomingPhoneNumber.php
+END
+Queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Queue.php
+END
+AuthorizedConnectApp.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/AuthorizedConnectApp.php
+END
+Transcription.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Transcription.php
+END
+OutgoingCallerId.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/OutgoingCallerId.php
+END
+Calls.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio/Rest/Calls.php
+END

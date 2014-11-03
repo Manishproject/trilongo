@@ -1,0 +1,125 @@
+   
+<!-- BEGIN PAGE -->  
+<div class="page-content">
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div id="portlet-config" class="modal hide">
+        <div class="modal-header">
+            <button data-dismiss="modal" class="close" type="button"></button>
+            <h3>portlet Settings</h3>
+        </div>
+        <div class="modal-body">
+            <p>Here will be a configuration form</p>
+        </div>
+    </div>
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->   
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h3 class="page-title"> Edit Product</h3>
+
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="tabbable tabbable-custom boxless">
+
+
+                    <div class="tab-pane"  id="tab_4">
+                        <div class="portlet box blue">
+                            <div class="portlet-title">
+                                <h4><i class="icon-reorder"></i> Edit Advertise </h4>
+                            </div>
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <?php
+                                echo $this->Form->create('Ad', array('type' => 'file', 'novalidate', 'class' => 'form-horizontal form-row-seperated'));
+                                if (isset($this->request->data['Ad']['id']) && !empty($this->request->data['Ad']['id'])) {
+                                    echo $this->Form->hidden('id');
+                                }
+
+                                echo $this->Session->flash('msg');
+                                ?>
+
+                                <div class="control-group">
+                                    <label class="control-label">Advertise Title</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('title', array('class' => 'm-wrap span12', 'label' => false)); ?>
+                                        <span class="help-inline">Enter Advertise Title Here</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Advertise Description</label>
+                                    <div class="controls">
+                                        <?php
+                                        echo $this->Form->input('description', array('class' => 'm-wrap span12', 'label' => false));
+                                        ?>
+                                        <span class="help-inline">Enter Advertise Description</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label">Advertise Link</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('link', array('class' => 'm-wrap span12', 'type' => 'text', 'label' => false)); ?>
+                                        <span class="help-inline">Enter Advertise Link Here</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Advertise Image Size</label>
+                                    <div class="controls">
+                                        <?php
+                                        $size_array = $this->Lab->advertise_size();
+                                        echo $this->Form->input('size', array('options' => $size_array, 'empty' => 'Select Size', 'class' => 'm-wrap span12', 'label' => false));
+                                        ?>
+                                        <span class="help-inline">Enter Advertise Link Here</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label">Advertise Image</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('image', array('type' => "file", 'label' => false, 'class' => 'm-wrap span12')); ?>
+                                        <div>
+                                            <?php
+                                            $advertise_image = $this->request->data['Ad']['image'];
+                                            $path = realpath('data/advertise_image/' . $advertise_image);
+                                            if (!empty($advertise_image)) {
+                                                if (file_exists($path)) {
+                                                    echo $this->Image->resize('data/advertise_image/' . $advertise_image, 75, 75, true, false);
+                                                } else {
+                                                    echo $this->Image->resize('data/advertise_image/default.jpg', 75, 75, true, false);
+                                                }
+                                            }
+                                            ?> 
+
+
+                                        </div>
+                                        <span class="help-block">Upload Advertise image</span>
+                                    </div>
+
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn blue"><i class="icon-ok"></i> Save</button>
+                                    <!--<button type="button" class="btn">Cancel</button>
+                                    --></div>
+                                <?php echo $this->Form->end(); ?>
+                                <!-- END FORM-->  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->         
+    </div>
+    <!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->  
+
+

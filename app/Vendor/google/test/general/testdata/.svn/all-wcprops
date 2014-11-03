@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/guestnest/!svn/ver/2923/app/Vendor/google/test/general/testdata
+END
+test_public_key.pem
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/guestnest/!svn/ver/2923/app/Vendor/google/test/general/testdata/test_public_key.pem
+END

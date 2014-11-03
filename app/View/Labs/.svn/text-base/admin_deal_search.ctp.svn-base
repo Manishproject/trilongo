@@ -1,0 +1,85 @@
+<?php
+if (!empty($all_deal)) {
+    foreach ($all_deal as $deal_data) {
+        ?>
+        <tr class="odd gradeX">
+            <td><?php echo $deal_data['ProductDeal']['id']; ?></td>
+            <td><?php echo $deal_data['ProductDeal']['title']; ?></td>
+            <td><?php echo $deal_data['ProductDeal']['description']; ?></td>
+            <td>
+                <?php
+                $deal_data_deal_image = $deal_data['ProductDeal']['deal_image'];
+                if (!empty($deal_data_deal_image)) {
+                    $path = realpath('data/product_image/' . $deal_data_deal_image);
+                    if (file_exists($path)) {
+                        echo $this->Image->resize('data/product_image/' . $deal_data_deal_image, 75, 75, true, false);
+                    } else {
+                        echo $this->Image->resize('data/product_image/default.png', 75, 75, true, false);
+                    }
+                } else {
+                    echo "...";
+                }
+                ?> 
+            </td>
+            <td class="hidden-480">
+                <?php echo $this->Lab->ShowDate($deal_data['ProductDeal']['start_date']); ?>
+            </td>
+            <td class="hidden-480">
+                <?php echo $this->Lab->ShowDate($deal_data['ProductDeal']['end_date']); ?>
+            </td>
+            <td class="hidden-480"><?php echo substr($deal_data['Product']['name'], 0, 20); ?></td>
+            <td>
+                <?php
+                $deal_data_image = $deal_data['Product']['product_image'];
+                if (!empty($deal_data_image)) {
+                    $path = realpath('data/product_image/' . $deal_data_image);
+                    if (file_exists($path)) {
+                        echo $this->Image->resize('data/product_image/' . $deal_data_image, 75, 75, true, false);
+                    } else {
+                        echo $this->Image->resize('data/product_image/default.png', 75, 75, true, false);
+                    }
+                } else {
+                    echo "...";
+                }
+                ?> 
+            </td>
+            <td class="hidden-480"><?php echo substr($deal_data['Product']['RetailerMenu']['name'], 0, 20); ?></td>
+            <td class="hidden-480" id="<?php echo "st_" . $deal_data['Product']['id']; ?>">
+                <?php
+                if ($deal_data['ProductDeal']['status'] == 0) {
+                    echo "Deactivate by User";
+                } elseif ($deal_data['ProductDeal']['status'] == 1) {
+                    echo "Active ";
+                } elseif ($deal_data['ProductDeal']['status'] == 2) {
+                    echo "Deactive by Admin ";
+                } else {
+                    echo "Not available";
+                }
+                ?>
+            </td>
+            <td class="hidden-480"><?php echo $this->Lab->ShowDate($deal_data['Product']['created']); ?></td>
+            <td >
+                <div class="btn-group">
+                    <a data-toggle="dropdown" href="#" class="btn purple">
+                        <i class="icon-user"></i> Settings
+                        <i class="icon-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><?php echo $this->Html->link('<i class="icon-plus"></i> Edit', array('controller' => 'labs', 'action' => 'edit_product/' . $deal_data['Product']['id']), array('class' => '', 'escape' => false)); ?></li>
+                        <li><?php echo $this->Html->link('<i class="icon-plus"></i> View Product', array('controller' => 'labs', 'action' => 'view_product/' . $deal_data['Product']['id']), array('class' => '', 'escape' => false)); ?></li>
+                        <?php if ($deal_data['Product']['status'] == 2 || $deal_data['Product']['status'] == 0) { ?>
+                            <li id="<?php echo "sp_" . $deal_data['Product']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $deal_data['Product']['id']; ?>, 1)"><i class="icon-remove"></i> <span>Active</span> </a></li>
+                        <?php } elseif ($deal_data['Product']['status'] == 1) { ?>
+                            <li id="<?php echo "sp_" . $deal_data['Product']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $deal_data['Product']['id']; ?>, 0)"><i class="icon-remove"></i> <span>Deactivate</span> </a></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <?php
+    }
+} else {
+    ?> 
+    <tr><td colspan="12" class="mid"> No Deal  found </td></tr>
+<?php } ?>
+

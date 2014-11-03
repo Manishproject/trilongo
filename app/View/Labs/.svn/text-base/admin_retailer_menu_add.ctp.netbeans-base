@@ -1,0 +1,126 @@
+<script type="text/javascript"	src="<?php echo SITEURL; ?>assets/js/jquery.friendurl.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#RetailerMenuName').friendurl({id: 'RetailerMenuAlias'});
+    });
+</script>
+
+<!-- BEGIN PAGE -->
+<div
+    class="page-content">
+
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h3 class="page-title"> Retailer Menu<small> </small></h3>
+
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="tabbable tabbable-custom boxless">
+
+
+                    <div class="tab-pane" id="tab_4">
+                        <div class="portlet box blue">
+                            <div class="portlet-title">
+                                <h4>
+                                    <i class="icon-reorder"></i>
+                                    <?php
+                                    if (isset($this->request->data['RetailerMenu']['id'])) {
+                                        echo "Edit";
+                                    } else {
+                                        echo "Add";
+                                    }
+                                    ?>
+                                </h4>
+
+                            </div>
+                            <div class="portlet-body form">
+                                <?php echo $this->Session->flash(); ?>
+                                <!-- BEGIN FORM-->
+                                <?php
+                                echo $this->Form->create('RetailerMenu', array('class' => 'form-horizontal form-row-seperated'));
+
+                                if (isset($this->request->data['RetailerMenu']['id']) && !empty($this->request->data['RetailerMenu']['id'])) {
+                                    echo $this->Form->hidden('id');
+                                }
+
+                                if (isset($this->request->data['RetailerMenu']['weight']) && is_numeric($this->request->data['RetailerMenu']['weight'])) {
+                                    echo $this->Form->hidden('weight');
+                                } else {
+                                    echo $this->Form->hidden('weight', array('value' => 0));
+                                }
+                                ?>
+
+                                <div class="control-group">
+                                    <label class="control-label">Name</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('name', array('maxLength' => 255, 'class' => 'm-wrap span12', 'label' => false)); ?>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label">alias</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('alias', array('maxLength' => 255, 'class' => 'm-wrap span12', 'label' => false)); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Description</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('description', array('class' => 'm-wrap span12', 'label' => false)); ?>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label"></label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('global', array('maxLength' => 255, 'class' => 'm-wrap span12', 'label' => false)); ?>Is Global?
+                                    </div>
+
+                                </div>
+
+
+                                <div class="control-group">
+                                    <label class="control-label">Status</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('status', array('options' => array('0' => 'Draft', '1' => 'Publish'), 'class' => 'n-wrap span12', 'label' => false)); ?>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn blue">
+                                        <i class="icon-ok"></i> Save
+                                    </button>
+
+                                    <?php echo $this->Html->link('Back To List', array('action' => 'retailer_menu'), array('class' => 'btn')); ?>
+                                </div>
+
+                                <?php echo $this->Form->end(); ?>
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->
+    </div>
+    <!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->
+
+<script
+    type="text/javascript"
+src="<?php echo SITEURL; ?>assets/ckeditor/ckeditor.js"></script>
+<script
+    type="text/javascript"
+src="<?php echo SITEURL; ?>assets/data-tables/DT_bootstrap.js"></script>
+

@@ -1,0 +1,62 @@
+
+
+<?php
+if (!empty($all_availability_record)) {
+    foreach ($all_availability_record as $availability_record) {
+        ?>
+        <tr class="odd gradeX">
+            <td><?php echo $availability_record['AvailabilityRecord']['id']; ?></td>
+            <td class="hidden-480"><?php echo ucfirst($availability_record['AvailabilityRecord']['name']); ?></td>
+            <td>
+                <?php
+                $availability_record_image = $availability_record['AvailabilityRecord']['image'];
+                if (!empty($availability_record_image)) {
+                    $path = realpath('data/availability_image/' . $availability_record_image);
+                    if (file_exists($path)) {
+                        echo $this->Image->resize('data/availability_image/' . $availability_record_image, 75, 75, true, false);
+                    } else {
+                        echo $this->Image->resize('data/availability_image/default.jpg', 75, 75, true, false);
+                    }
+                } else {
+                    echo "...";
+                }
+                ?> 
+            </td>
+
+            <td class="hidden-480" id="<?php echo "st_" . $availability_record['AvailabilityRecord']['id']; ?>">
+                <?php
+                if ($availability_record['AvailabilityRecord']['status'] == 0) {
+                    echo "Deactivate";
+                } elseif ($availability_record['AvailabilityRecord']['status'] == 1) {
+                    echo "Active ";
+                } else {
+                    echo "Not available";
+                }
+                ?>
+            </td>
+            <td class="hidden-480"><?php echo $this->Lab->ShowDate($availability_record['AvailabilityRecord']['created']); ?></td>
+            <td >
+                <div class="btn-group">
+                    <a data-toggle="dropdown" href="#" class="btn purple">
+                        <i class="icon-user"></i> Settings
+                        <i class="icon-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ><?php echo $this->Html->link('<i class="icon-plus"></i> Edit', array('controller' => 'labs', 'action' => 'edit_retailer_availability/' . $availability_record['AvailabilityRecord']['id']), array('class' => '', 'escape' => false)); ?></li>
+                        <?php if ($availability_record['AvailabilityRecord']['status'] == 2 || $availability_record['AvailabilityRecord']['status'] == 0) { ?>
+                            <li id="<?php echo "sp_" . $availability_record['AvailabilityRecord']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $availability_record['AvailabilityRecord']['id']; ?>, 1)"><i class="icon-remove"></i> <span>Active</span> </a></li>
+                        <?php } elseif ($availability_record['AvailabilityRecord']['status'] == 1) { ?>
+                            <li id="<?php echo "sp_" . $availability_record['AvailabilityRecord']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $availability_record['AvailabilityRecord']['id']; ?>, 0)"><i class="icon-remove"></i> <span>Deactivate</span> </a></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <?php
+    }
+} else {
+    ?> 
+    <tr><td colspan="12" class="mid"> No Retailer Availability found </td></tr>
+<?php } ?>
+
+

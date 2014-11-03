@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth
+END
+Google_AuthNone.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_AuthNone.php
+END
+Google_PemVerifier.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_PemVerifier.php
+END
+Google_Verifier.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_Verifier.php
+END
+Google_Auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_Auth.php
+END
+Google_LoginTicket.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_LoginTicket.php
+END
+Google_AssertionCredentials.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_AssertionCredentials.php
+END
+Google_Signer.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_Signer.php
+END
+Google_OAuth2.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_OAuth2.php
+END
+Google_P12Signer.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/2923/app/Vendor/google/src/auth/Google_P12Signer.php
+END

@@ -1,0 +1,724 @@
+/*---------------------------------------------320 To 480 View Css Start-----------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+img{ width:100%;}
+.main-div{ width:300px;}	
+header .logo{ float:none; margin:auto; width: 152px; position:static;}
+.right-top{ width:100%; display:block;}	
+.right-top .s-country{ float: left; margin: 10px auto; text-align: center; width: 301px;}
+.right-top .s-country .select{margin-top:12px;}
+.right-top nav{float: right; margin:-93px 0 0; position: relative; z-index:999; width: 20%;}
+.right-top ul li.book-now a{-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 7px 27px;}
+.right-top ul{float:left; width:79%;}
+.right-top ul li:nth-child(2){padding-right:0px;}
+.right-top .top-r-link ul li.book-now a{padding:7px 16px;}
+.right-top .top-r-link ul li.bacome_btn{ width:72%;}
+
+/*Slider Css Start*/
+.download-link,
+.download-link input[type="text"],
+#tabs section,
+.book-taxi-c .tax1-c .pickup input[type="text"],
+.book-taxi-c .tax1-c .pickup-d input[type="text"],
+.book-taxi-c .tax1-c .pickup-t input[type="text"],
+.btn a
+{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.skdslider ul.slides li img { height: 380px; width: auto;}
+.slide-desc{ top:0px; width:300px;}
+.slide-desc > h1{ font-size:22px;}
+.slider_info span{ background: url("../images/right-icon.png") no-repeat scroll left center rgba(0, 0, 0, 0); font-size: 19px;   padding-left:40px;}
+
+.hm_input{ padding:0px; width:100%;}
+.download-link input[type="text"]{ width:100%; margin:0 0 10px 0;}
+.download-link input[type="submit"]{padding: 9px 17px;   font-size: 10px;}
+.skdslider,
+.skdslider ul.slides li
+{height: 373px;  overflow: hidden;}
+.btn a{ display:block;  background: url("../images/btn-icon.png") no-repeat scroll 85% center hsl(21, 79%, 52%);}
+.btn a:hover{ background: url("../images/btn-icon.png") no-repeat scroll 85% center hsl(48, 100%, 49%);}
+.btn{ float:none;}
+/*Slider Css End*/
+
+/*Home Page Taber Css Start*/
+#tabs{ width:100%; float:none;}
+#tabs li{ display:block; border-radius:4px; margin:0 0 5px 0;}
+#tabs section{ width:100%;}
+.book-taxi-c .box-r-arrow,
+.box-cartoon
+{ display:none;}
+.book-taxi-c .tax1-c .pickup,
+.book-taxi-c .tax1-c .pickup-d,
+.book-taxi-c .tax1-c .pickup-t
+{ width:100%; float:none; margin-right:0;}
+.book-taxi-c .tax1-c .pickup input[type="text"],
+.book-taxi-c .tax1-c .pickup-d input[type="text"],
+.book-taxi-c .tax1-c .pickup-t input[type="text"],
+.btn a
+{ width:100%;}
+.book-taxi-c .tax1-c .pickup-d span,
+.book-taxi-c .tax1-c .pickup span
+{ font-size:16px;}
+.book-taxi-c .btn-submit input[type="submit"]{padding: 3px 18% 8px 5%; background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823; font-size:19px;}
+.book-taxi-c .btn-submit input[type="submit"]:hover{background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900;}
+/*Home Page Taber Css End*/
+.video iframe{ width:100% !important; height:400px !important;}
+.parallax.bg1{height: 590px; margin: 693px auto 38px;}
+.how-trilongo-c .heading h2{font-size: 22px; padding:12px 10% 0;}
+.how-trilongo-c .heading{padding: 16% 0;}
+.o-providers{ width:100%; float:none; margin:0px;}
+.o-providers .heading{ width:100%; background: url("../images/our-p-arrow.png") no-repeat scroll center 54px hsla(0, 0%, 0%, 0); padding: 3% 0 11%;}
+.o-providers .heading h3{ padding:5px 0;  font-size: 21px;}
+.o-providers .heading i { display: inline-block; float: none; padding-right: 12px; padding-top: 8px; vertical-align:middle; width: 25px;}
+.o-providers .o-p-c span{ font-size:17px;}
+.o-providers .o-p-c .btn a{ width:100%;}
+.o-providers .p-r-i{ float:none; width:100%; margin-top:15px;}
+.o-providers .p-r-c { float: none; width: 100%;}
+.o-providers .o-p-c .btn{ float:left; width:100%; margin-bottom:15px;}
+#need-ride h3{line-height: 29px; font-size: 26px; margin-top: 37%;}
+.parallax.bg2{height: 389px; margin: 41px auto 50px;}
+/*Footer Css Start*/
+#footer .f-panel{ float: none; padding-right: 0; padding-top: 3%; width: 100%;}
+#footer .s-f-l{ width:100%; text-align:center;}
+/* inner top Css Start*/ 
+.inner-mid-top{height: 149px;  overflow: hidden}
+.inner-top-h-bg{ margin-top: 13%;  overflow: hidden;;}
+.inner-top-h-bg h1{font-size: 20px;}
+.inner-top-h-bg h1 i{padding-right: 20px;  padding-top:5px;}
+/* Sign In Css Start*/ 
+.login-content .input-c textarea{height: 65px; width:74%; font-size:14px;}
+.login-content .input-c input[type="text"]{width:74%; font-size:14px;}
+.login-content .submit-btn{float:inherit;}
+.login-content .submit-btn input[type="submit"]{width:100%;}
+.login-content{padding:0px; width:100%;}
+.login-content p a{font-size:14px;}
+.fancybox-skin #register .login-content{width:242px;}
+#register .login-content p{float:right;}
+.login-content .btn-submit input[type="submit"]{background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823;  padding: 8px 42% 8px 9%; font-size: 16px; margin-bottom:10px; width: 100px;}
+
+.btn-submit input[type="submit"]:hover {background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900 !important;}
+.btn-submit{float: left; }
+.login-content form{padding:0px;  width: 100%;    margin: 4% 0 5%; display:inline-block;}
+.fancybox-inner #login .login-content .input-c input[type="email"], .fancybox-inner #login .login-content .input-c input[type="password"]{width:71%; font-size: 14px; padding: 6px 10px 6px;}
+#login .login-content .input-c input[type="password"], #login .login-content .input-c input[type="email"]{width:78%; font-size: 14px; padding: 9px 10px 10px;}
+.login-content .input-c img{width:80%; }
+/* Feedback Css Start*/ 
+.feedback-content input[type="text"]{width: 91%;}
+.feedback-content{width: 89%;}
+.feedback-content h1{font-size:20px;}
+.feedback-content textarea{width:91%;}
+.feedback-btn a img{ float: right;}
+.feedback-content .btn-submit input[type="submit"]{background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823;  padding: 7px 25% 9px 10%; font-size: 18px;}
+.feedback-content .btn-submit input[type="submit"]:hover {background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900;}
+/* Commen Css Start*/ 
+.ft{float:none;}
+.field{width:100%; margin-bottom:0; clear:both;}
+.btn-submit input[type="submit"]{background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823  !important;  padding:5px 18% 6px 6%;; font-size: 18px;}
+#UserAgentSignUpForm .btn-submit input[type="submit"]{padding: 5px 33% 6px 6%;  width: 120px;}
+.reservation-from .btn-submit input[type="submit"]{padding: 5px 44% 6px 6%;}
+
+.book-taxi-c .btn-submit input[type="submit"]{background: url("../images/s-btn-icon.png") no-repeat scroll 92% center #e56823 !important;}
+.book-taxi-c .btn-submit input[type="submit"]:hover{background: url("../images/s-btn-icon.png") no-repeat scroll 92% center #fcc900 !important;}
+.book-taxi-c .tax1-c h2 span{z-index: 2;}
+.btn-submit input[type="submit"]:hover {background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900  !important;}
+
+.textbox{width: 255px;}
+.address .textbox{width: 276px;}
+.login-pannel .btn-submit a.forgot-password{float:none;font-size: 16px;}
+.form-heading{margin-bottom:5%;  padding:10px 0 20px;}
+/* My Account CSS */
+.r-profile-c{width:100%;}
+.r-profile-c .user-info ul li{width:100%;  padding-bottom: 5px;}
+.c-i-d{display:none;}
+.c-i-l{width: 94%;margin: 10px; padding:0px; border-bottom: 1px solid #B6C5D6;}
+.c-i-l{padding-bottom: 9px;}
+.c-i-r{padding: 0 10px 10px;}
+.user-login .label{width:100%; padding-bottom: 10px; padding-top:0px;}
+.user-login .remember{padding-left:0%;}
+.book_info{ width:49%;}
+
+.about_message h2 b{ float:none; display:block;}
+.show_blk{width:100%; width:100%;}
+
+.message_body, 
+.message_action{ width:100%;}
+.message_body p{ width: 66%;}
+.message_action a{ display:block;}
+
+.listing_filter select{width: 212px;}
+.search_listing{width: 168px;}
+.search_listing input[type="text"]{ width: 77%;}
+.listing_filter{ margin-bottom:10px;}
+.right-top .top-r-link ul li:nth-child(3) a{ display: inline-block; width: 100%; }
+.right-top .top-r-link ul li:nth-child(2) a{ padding:7px 28px; }
+
+.my-profile .user-img{ float:none; margin:auto;}
+.r-profile-c .user-name h2{ width:100%; text-align:center;}
+.different_reservation{ padding:4px 0; margin:0 0 5px 0; }
+.drv_name,
+.phone_numbr,
+.addrs,
+.action_bar
+{ width:100%; border:0px;}
+
+.message_body span { float: left; font-size: 12px; margin: 7px 0 2px;}
+#footer .s-f-l ul li img{width: 80%;}
+#footer .s-f-l ul li{padding-right:0;}
+#footer .s-f-l .copyrights ul li{ font-size:16px;}
+#footer .s-f-l .copyrights ul li:nth-child(2){display:none;}
+
+.book-taxi-c .pickup .formError, .book-taxi-c .pickup-d .formError{left:104px !important;}
+#footer .s-f-r ul li{padding-right:6px;}
+#footer .s-f-r{float:none; text-align:center;}
+.providers_profile{ margin: 45px 0 10px;}
+.c-i-l-link a{width: 80%;margin: 5px 0;}
+.new_pad{ margin-bottom: 15px;}
+.btn-submit{margin:0; margin-bottom:15px;}
+.signup-pannel .formError{left:141px !important;}
+#feedback .btn-submit{width: 95%;}
+.service_info_box_btm{padding: 20px 0 0;}
+.ser_res label{width: 64px;}
+.ser_res{width:100%; margin:0;}
+.service_info_box{ margin: 0;}
+.field{margin-bottom:20px; height:auto;}
+.label, .edit-label, .value, .edit-text{font-size:13px;}
+.edit-label{padding-right: 5px;}
+.company-edit .btn-submit input[type="submit"]{margin: 0 0 5%;}
+.selects{width:100%;}
+.field img{margin-top:0; float: left;}
+.textarea{width:91%;}
+
+.login-content .btn-submit{margin:0;}
+.login-content p{padding-bottom:4%;}
+.reservation-from #ReservationBookForm input[type="text"]{width:100%;}
+.map_view_top .field{width:100%; margin-right:0;}
+.map_view_top .field input, .reservation-from #ReservationBookForm input[type="text"]{width: 92% !important;}
+.map_view_mid .ft{float:left;}
+
+#ReservationSelectProviderForm .address{ margin: 0;}
+.choose-pro h2{margin-top:0;}
+.suggestion-right ul li{margin-bottom: 5%; width: 94%;}
+#suggested_provider ul, .min_price{width:100%;}
+.suggestion-right .redio{margin-top:10%;}
+.suggestion-right i{ padding-top: 9%;}
+#suggested_provider .skip_provider{margin:0;}
+.suggestion-right .edit-btn a{width:83%;}
+#suggested_provider .skip_provider{width:100%;}
+
+.warning_inner{ width: 91%;}
+#cards label {width:100%;text-align: center;  margin: 0 15px 25px 0; font-size: 19px;}
+.payment_pg #cards img{ width: 42%; margin: 0 10px 18px;}
+.payment_pg .input_field{width:100%;  margin: 0 1px 10px 0;}
+.input_field_in:nth-child(3){margin-right:0px;}
+.input_field_in:nth-child(2){width: 25px;margin-right: 0;}
+.input_field_in{ width:127px; margin: 0 20px 0 0;}
+.input_field_in:nth-child(4){width:100%;}
+.payment_pg .input_field .formError{left: 136px !important;}
+
+.reservation-from #ReservationBookForm .resevationlb{width:100%;}
+
+.address .field  .formError{left:8px !important;}
+.choose_suggestion .suggestion-right .formError{left:10px !important;}
+.put_your_price .min_price .input{ width: 59%;}
+.put_your_price .min_price label{font-size:13px;}
+.put_your_price .min_price .type{float: left;  padding-left: 44px;  width: 20%;}
+.put_your_price .min_price input[type="text"]{ width: 88%;}
+.put_your_price .form_btm_btn .submit .h_f_b{padding: 4px 33px;}
+.radio label{font-size:13px;}
+.put_your_price .min_price .type{font-size:13px;}
+.e-phone-n{margin-bottom:15px;}
+.e-phone-n .intl-tel-input{width:100%;}
+.download-link input[type="button"]{letter-spacing:normal; padding: 7px 11px; width:100%;}
+
+.download-link .ServerError{width:100%; }
+.download-link{ width:100%; }
+.fancybox-skin #login .login-content .input-c .formError{left: 59px !important;}
+#login .login-content .input-c .formError{left: 144px !important;}
+#login .login-content .input-c .formError:first-child{top: 66.6px !important;}
+#forgot-pass .login-content .input-c input[type="email"]{width:77%;  padding: 3px;}
+.fancybox-skin #forgot-pass .login-content .input-c input[type="email"]{width:74%;   font-size: 14px; padding:5px 3px 5px 5px; }
+#content #forgot-pass .login-content .input-c input[type="email"]{width: 79%;}
+#content .login-content .input-c img{width:100%;}
+#content .login-content .input-c input[type="email"]{padding: 9px 10px 10px; width: 78%;}
+#forgot-pass .login-content  .btn-submit {float:none;  margin-bottom: 10px;}
+#forgot-pass .login-content p{float:right;}
+#content #forgot-pass .login-content p{margin-bottom:15px; padding-right:10px;}
+#register .login-content .input-c input[type="text"], #register .login-content .input-c input[type="password"], #register .login-content .input-c input[type="email"] {font-size: 14px;  padding:5px; }
+.fancybox-inner #register .login-content .input-c input[type="text"], .fancybox-inner #register .login-content .input-c input[type="password"], .fancybox-inner #register .login-content .input-c input[type="email"]{width:78%;}
+.fancybox-skin #register .login-content{width:242px; }
+.fancybox-skin #register .input-c .formError{ left:64px !important;}
+#register .input-c .formError{ left: 72px !important;}
+
+.user-name .edit-btn{float:right;}
+.user_w_icon ul li{ padding: 0 10px 0 0;}
+
+#feedback .login-content .input-c input[type="text"], #feedback .login-content .input-c input[type="email"]{font-size: 14px; width:79%; padding:9px 10px 10px;}
+#feedback .login-content .input-c textarea{ width: 81%;font-size: 14px;}
+
+.fancybox-skin #feedback .login-content .input-c input[type="text"], #feedback .login-content .input-c input[type="email"]{font-size: 14px; width:75%; padding:7px 10px 6px;}
+.fancybox-skin #feedback .login-content .input-c textarea{ width: 77%;font-size: 14px;}
+.fancybox-skin #feedback  .login-content .input-c textarea{    height: 51px;}
+ .fancybox-inner #feedback .login-content .input-c .formError{left:72px !important;}
+
+.form_bg { padding: 0 10px;}
+.fancybox-skin .form_bg { padding:0px;}
+	.login-content h1{font-size: 20px;}
+.intl-tel-input .country-list{max-height: 104px !important; overflow:scroll !important;}
+.feedback_submit{background: url("../images/btn-icon.png") no-repeat scroll 84% center #e56823; padding: 8px 21% 8px 6%; width: 100px;}
+.feedback_submit:hover{background: url("../images/btn-icon.png") no-repeat scroll 84% center #fcc900;}
+
+.fancybox-skin #login .login-content p{ padding-bottom: 4%;    width: 100%; float: left;  text-align: left;}	
+.info-edit-f .btn-submit input[type="submit"]{  padding: 7px 35% 9px 10%;}
+
+.fancybox-inner .login-content .input-c .formError {left: 3px !important;}
+ /* will be red only in google chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#UserAgentSignUpForm .btn-submit input[type="submit"]{padding: 5px 46% 6px 10%; transition:none;}
+}
+/* IE 9, 10 & 11 */
+@media screen and (min-width:0\0) {
+#UserAgentSignUpForm .btn-submit input[type="submit"]{padding: 5px 46% 6px 10%;transition:none;}
+}
+
+}
+
+
+/*---------------------------------------------481 To 767 View Css Start-----------------------------------------------------*/
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	
+	.feedback_submit{background: url("../images/btn-icon.png") no-repeat scroll 84% center #e56823; padding: 8px 21% 8px 6%; width: 100px;}
+	.fancybox-skin #login .login-content p{ padding-bottom: 4%;  padding-top: 4px;   width: 100%; float: left;    text-align: left;}
+	#UserAgentSignUpForm .btn-submit input[type="submit"]{padding: 5px 33% 6px 6%; width:120px;} 
+	
+	
+	#UserAgentSignUpForm .btn-submit{margin-bottom:3%;}
+	.login-content h1{font-size: 20px;}
+	.fancybox-inner #register .login-content .input-c input[type="text"], .fancybox-inner #register .login-content .input-c input[type="password"], .fancybox-inner #register .login-content .input-c input[type="email"]{width:77%;}
+.fancybox-skin #register .login-content{width:242px !important;}
+.fancybox-skin #register .input-c .formError{ left:64px !important;}
+
+	#feedback .login-content .input-c input[type="text"], #feedback .login-content .input-c input[type="email"]{font-size: 14px; width:79%; padding:9px 10px 10px;}
+#feedback .login-content .input-c textarea{ width: 81%; font-size: 14px;}
+.fancybox-skin #feedback .login-content .input-c input[type="text"], .fancybox-skin #feedback .login-content .input-c input[type="email"]{font-size: 14px; width:73%; padding:7px 10px 6px;}
+.fancybox-skin #feedback .login-content .input-c textarea{ width: 75%;font-size: 14px;}
+.fancybox-skin #feedback  .login-content .input-c textarea{    height:66px;}
+ .fancybox-inner #feedback .login-content .input-c .formError{left:72px !important;}
+ 
+#feedback_form{margin-bottom:5%;}
+.form_bg { padding: 0 10px;}
+.fancybox-skin .form_bg { padding:0px;}
+img{ width:100%;}
+.main-div{ width:300px;}	
+header .logo{ float:none; margin:auto; width: 152px; position:static;}
+.right-top{ width:100%; display:block;}	
+.right-top .s-country{ float: left; margin: 10px auto; text-align: center; width: 301px;}
+.right-top .s-country .select{margin-top:12px;}
+.right-top nav{float: right; margin:-93px 0 0; position: relative; z-index:999; width: 20%;}
+.right-top ul li.book-now a{-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 7px 27px;}
+.right-top ul{float:left; width:79%;}
+.right-top ul li:nth-child(2){padding-right:0px;}
+.right-top .top-r-link ul li.book-now a{padding:7px 23px;}
+
+/*Slider Css Start*/
+.download-link,
+.download-link input[type="text"],
+#tabs section,
+.book-taxi-c .tax1-c .pickup input[type="text"],
+.book-taxi-c .tax1-c .pickup-d input[type="text"],
+.book-taxi-c .tax1-c .pickup-t input[type="text"],
+.btn a
+{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.skdslider ul.slides li img { height: 380px; width: auto;}
+.slide-desc{ top:0px; width:300px;}
+.slide-desc > h1{ font-size:22px;}
+.slider_info span{ background: url("../images/right-icon.png") no-repeat scroll left center rgba(0, 0, 0, 0); font-size: 19px;   padding-left:40px;}
+.download-link{ width:100%;}
+.hm_input{ padding:0px; width:100%;}
+.download-link input[type="text"]{ width:100%; margin:0 0 10px 0;}
+.download-link input[type="submit"]{padding: 9px 17px;   font-size: 10px;}
+.skdslider,
+.skdslider ul.slides li
+{height: 373px;  overflow: hidden;}
+.btn a{ display:block;  background: url("../images/btn-icon.png") no-repeat scroll 85% center hsl(21, 79%, 52%);}
+.btn a:hover{ background: url("../images/btn-icon.png") no-repeat scroll 85% center hsl(48, 100%, 49%);}
+.btn{ float:none;}
+/*Slider Css End*/
+
+/*Home Page Taber Css Start*/
+#tabs{ width:100%; float:none;}
+#tabs li{ display:block; border-radius:4px; margin:0 0 5px 0;}
+#tabs section{ width:100%;}
+.book-taxi-c .box-r-arrow,
+.box-cartoon
+{ display:none;}
+.book-taxi-c .tax1-c .pickup,
+.book-taxi-c .tax1-c .pickup-d,
+.book-taxi-c .tax1-c .pickup-t
+{ width:100%; float:none; margin-right:0;}
+.book-taxi-c .tax1-c .pickup input[type="text"],
+.book-taxi-c .tax1-c .pickup-d input[type="text"],
+.book-taxi-c .tax1-c .pickup-t input[type="text"],
+.btn a
+{ width:100%;}
+.book-taxi-c .tax1-c .pickup-d span,
+.book-taxi-c .tax1-c .pickup span
+{ font-size:16px;}
+.book-taxi-c .btn-submit input[type="submit"]{padding: 3px 18% 8px 5%; background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823; font-size:19px;}
+.book-taxi-c .btn-submit input[type="submit"]:hover{background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900;}
+
+/*Home Page Taber Css End*/
+
+.video iframe{ width:100% !important; height:400px !important;}
+.parallax.bg1{height: 645px; margin: 693px auto 38px;}
+.how-trilongo-c .heading h2{font-size: 22px; padding:12px 5% 0;}
+.how-trilongo-c .heading{padding: 16% 0;}
+.o-providers{ width:100%; float:none; margin:0px;}
+.o-providers .heading{ width:100%; background: url("../images/our-p-arrow.png") no-repeat scroll center 54px hsla(0, 0%, 0%, 0); padding: 3% 0 11%;}
+.o-providers .heading h3{ padding:5px 0;  font-size: 21px;}
+.o-providers .heading i { display: inline-block; float: none; padding-right: 12px; padding-top: 8px; vertical-align:middle; width: 25px;}
+.o-providers .o-p-c span{ font-size:17px;}
+.o-providers .o-p-c .btn a{ width:100%;}
+.o-providers .p-r-i{ float:none; width:100%; margin-top:15px;}
+.o-providers .p-r-c { float: none; width: 100%;}
+.o-providers .o-p-c .btn{ float:left; width:100%; margin-bottom:15px;}
+#need-ride h3{line-height: 29px; font-size: 26px; margin-top: 37%;}
+.parallax.bg2{height: 389px; margin: 41px auto 50px;}
+/*Footer Css Start*/
+#footer .f-panel{ float: none; padding-right: 0; padding-top: 3%; width: 100%;}
+#footer .s-f-l{ width:100%; text-align:center;}
+/* inner top Css Start*/ 
+.inner-mid-top{height: 149px;  overflow: hidden}
+.inner-top-h-bg{ margin-top:9%;  overflow: hidden;;}
+.inner-top-h-bg h1{font-size:20px;}
+.inner-top-h-bg h1 i{padding-right: 20px;  padding-top:5px;}
+/* Sign In Css Start*/ 
+.login-content{width:100%; padding:0px; margin-bottom:5% !important;}
+.login-content h1{font-size:20px; padding-top: 5%;}
+.login-content .input-c input[type="text"],
+.login-content .input-c textarea{width:74%;}
+
+.login-content .input-c textarea{  height: 65px;}
+.login-content .submit-btn{float:inherit;}
+.login-content .submit-btn input[type="submit"]{width:100%;}
+.login-content p a{font-size:14px;}
+
+.login-content .btn-submit input[type="submit"]{background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823;  padding:8px 42% 8px 9%; font-size: 16px; width: 100px;}
+.btn-submit input[type="submit"]:hover {background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900;}
+.login-content form{padding:0px;}
+.login-content .input-c input[type="email"], .login-content .input-c input[type="password"]{width:76%;}
+/* Feedback Css Start*/ 
+.feedback-content input[type="text"]{width: 91%;}
+.feedback-content{width: 89%;}
+.feedback-content h1{font-size:20px;}
+.feedback-content textarea{width:91%;}
+.feedback-btn a img{ float: right;}
+.feedback-content .btn-submit input[type="submit"]{background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823;  padding:7px 9% 9px 3%; font-size: 18px;}
+.feedback-content .btn-submit input[type="submit"]:hover {background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900;}
+/* Commen Css Start*/ 
+.ft{float:none;}
+.field{width:100%; margin-bottom:0; clear:both;}
+.btn-submit input[type="submit"]{background:url("../images/s-btn-icon.png") no-repeat scroll 84% center #e56823 !important;  padding: 7px 25% 9px 10%; font-size: 18px;}
+.reservation-from .btn-submit input[type="submit"]{padding:5px 14% 6px 4%;}
+.info-edit-f .btn-submit input[type="submit"]{  padding: 7px 35% 9px 10%;}
+.btn-submit input[type="submit"]:hover {background: url("../images/s-btn-icon.png") no-repeat scroll 84% center #fcc900 !important;}
+.textbox{width:260px;}
+.address .textbox{width: 276px;}	
+.login-pannel .btn-submit a.forgot-password{float:none;font-size: 16px;}
+.form-heading{margin-bottom:5%;  padding:10px 0 20px;}
+/* My Account CSS */
+.r-profile-c{width:100%;}
+.r-profile-c .user-info ul li{width:100%;  padding-bottom: 5px;}
+.c-i-d{display:none;}
+.c-i-l{width: 94%;margin: 10px; padding:0px; border-bottom: 1px solid #B6C5D6;}
+.c-i-l{padding-bottom: 9px;}
+.c-i-r{padding: 0 10px 10px;}
+.book_info{ width:49%;}
+
+.about_message h2 b{ float:none; display:block;}
+.show_blk{width:100%; width:100%;}
+.message_body, 
+.message_action{ width:100%;}
+.message_body p{ width: 66%;}
+.message_action a{ display:block;}
+
+.listing_filter select{width: 212px;}
+.search_listing{width: 168px;}
+.search_listing input[type="text"]{ width: 77%;}
+.listing_filter{ margin-bottom:10px;}
+.my-profile .user-img{ float:none; margin:auto;}
+.r-profile-c .user-name h2{ width:100%; text-align:center;}
+
+.drv_name,
+.phone_numbr,
+.addrs,
+.action_bar
+{ width:100%; border-right:0px;}
+.different_reservation{ margin-bottom:5px;}
+
+
+.message_body span { float: left; font-size: 12px; margin: 7px 0 2px;}
+#footer .s-f-l ul li img{width: 80%;}
+#footer .s-f-l ul li{padding-right:0;}
+#footer .s-f-l .copyrights ul li{ font-size:16px;}
+#footer .s-f-l .copyrights ul li:nth-child(2){display:none;}
+
+.book-taxi-c .pickup .formError, .book-taxi-c .pickup-d .formError{left:104px !important;}
+#footer .s-f-r ul li{padding-right:6px;}
+#footer .s-f-r{float:none; text-align:center;}
+.providers_profile{ margin: 45px 0 10px;}
+.c-i-l-link a{width: 80%;margin: 5px 0;}
+.new_pad{ margin-bottom: 15px;}
+.btn-submit{margin:0;}
+
+
+.service_info_box_btm{padding: 20px 0 0;}
+.ser_res label{width: 64px;}
+.ser_res{width:100%; margin:0;}
+.service_info_box{ margin: 0;}
+
+.field{margin-bottom:20px; height:auto;}
+.label, .edit-label, .value, .edit-text{font-size:13px;}
+.edit-label{padding-right: 5px;}
+.company-edit .btn-submit input[type="submit"]{margin: 0 0 5%;}
+#UserInfoEditForm .field .selects{width:100%;}
+#UserInfoEditForm .field .textarea{width: 91%;}
+#UserInfoEditForm .btn-submit input[type="submit"]{margin-bottom:6%;}
+.field img{margin-top:0; float:left;}
+.login-content .btn-submit{margin:0;}
+
+.reservation-from #ReservationBookForm input[type="text"]{width:100%;}
+.map_view_top .field{width:100%; margin-right:0;}
+.map_view_top .field input, .reservation-from #ReservationBookForm input[type="text"]{width: 92% !important;}
+.map_view_mid .ft{float:left;}
+
+.address .selects{width:100%;}
+.address  .textarea{width:91%;}
+#ReservationSelectProviderForm .address{ margin: 0;}
+.choose-pro h2{margin-top:0;}
+.suggestion-right ul li{margin-bottom: 5%; width: 94%;}
+#suggested_provider ul, .min_price{width:100%;}
+.suggestion-right .redio{margin-top:10%;}
+.suggestion-right i{ padding-top: 9%;}
+#suggested_provider .skip_provider{margin:0;}
+.suggestion-right .edit-btn a{width:83%;}
+#suggested_provider .skip_provider{width:100%;}
+
+.warning_inner{ width: 91%;}
+
+#cards label {width:100%;text-align: center;  margin: 0 15px 25px 0; font-size: 19px;}
+.payment_pg #cards img{ width: 42%; margin: 0 10px 18px;}
+.payment_pg .input_field{width:100%;  margin: 0 1px 10px 0;}
+.input_field_in:nth-child(3){margin-right:0px;}
+.input_field_in:nth-child(2){width: 25px;margin-right: 0;}
+.input_field_in{ width:127px; margin: 0 20px 0 0;}
+.input_field_in:nth-child(4){width:100%;}
+.payment_pg .btn-submit{width:auto;}
+
+.payment_pg .input_field .formError {  left: 290px !important;}
+
+.reservation-from #ReservationBookForm .resevationlb{width:100%;}
+
+.address .field  .formError{left:230px !important;}
+.choose_suggestion .suggestion-right .formError{left:230px !important;}
+.put_your_price .min_price .input{ width: 59%;}
+.put_your_price .min_price label{font-size:13px;}
+.put_your_price .min_price .type{float: left;  padding-left: 44px;  width: 20%;}
+.put_your_price .min_price input[type="text"]{ width: 88%;}
+.put_your_price .form_btm_btn .submit .h_f_b{padding: 4px 33px;}
+.radio label{font-size:13px;}
+.put_your_price .min_price .type{font-size:13px;}
+.e-phone-n{margin-bottom:15px;}
+.e-phone-n .intl-tel-input{width:100%;}
+.download-link input[type="button"]{letter-spacing:normal; padding: 7px 11px;}
+
+#login .login-content .input-c .formError{left: 326px !important;}
+.fancybox-inner #login .login-content .input-c .formError {
+    left: 60px !important;
+}
+#login .login-content .input-c .formError:first-child{top: 66.6px !important;}
+#forgot-pass .login-content .input-c input[type="email"]{width: 70%;}
+#content #forgot-pass .login-content .input-c input[type="email"]{width: 79%; font-size:16px;}
+#content .login-content .input-c img{width:100%;}
+#content .login-content .input-c input[type="email"]{  padding:8px 7px 6px;}
+#forgot-pass .login-content  .btn-submit {float:none;  margin-bottom: 10px;}
+#forgot-pass .login-content p{float:right;}
+#content #forgot-pass .login-content p{margin-bottom:15px; padding-right:10px;}
+.edit-btn{float:right;}
+.user_w_icon ul li{padding: 0 6px 0 0;}
+.book-taxi-c .btn-submit input[type="submit"]{background: url("../images/s-btn-icon.png") no-repeat scroll 92% center #e56823 !important;}
+.book-taxi-c .btn-submit input[type="submit"]:hover{background: url("../images/s-btn-icon.png") no-repeat scroll 92% center #fcc900 !important;}
+.book-taxi-c .tax1-c h2 span{z-index: 2;}
+.fancybox-inner .login-content .input-c .formError {left: 3px !important;}
+
+ /* will be red only in google chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#UserAgentSignUpForm .btn-submit input[type="submit"]{padding: 5px 46% 6px 10% ; transition:none;}
+}
+/* IE 9, 10 & 11 */
+@media screen and (min-width:0\0) {
+#UserAgentSignUpForm .btn-submit input[type="submit"]{padding: 5px 46% 6px 10% !important; transition:none;}
+}
+
+
+}
+
+/*---------------------------------------------768 To 991 View Css Start-----------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.right-top .s-country{ float: left; margin: 10px auto;  width:352px; margin: 13px 0 0;}
+.right-top .s-country .select{margin-top:12px;}
+.right-top nav{float: right; margin:-93px 0 0; position: relative; z-index:999; width: 20%;}
+.right-top ul li.book-now a{-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 7px 27px;}
+.right-top ul{float:left; width:79%;}
+.right-top ul li:nth-child(2){padding-right:0px;}
+.right-top .top-r-link ul li.book-now a{padding:10px 25px;}
+.right-top .top-r-link ul li{ padding-right: 7px;}
+.right-top .top-r-link ul li:last-child{width: 98%;}
+.right-top .s-country{width: 218px; float:right;}
+.right-top .s-country{  position: relative;    right: -111px;}
+.skdslider ul.slides li img{ height:auto;}
+.slide-desc{ top: 5%;}
+.slide-desc > h1{font-size: 25px;  margin-bottom: 2%;}
+.slider_info span{ font-size: 18px; background:url("../images/right-icon-768.png") no-repeat scroll left center;}
+.main-div{ width:750px;}
+header .logo img{ width:100%;}
+header .logo{ width:145px;}	
+.right-top{  margin:0; width: 522px;  text-align: right;}	
+.right-top .top-r-link{ float:none;}
+.right-top .top-r-link ul li.book-now{ float:none;}
+.mobile_menu{margin-bottom: 3px;  margin-top: 6px;  padding: 3px 25px;}
+.book-taxi-c .box-r-arrow,
+.box-cartoon{ display:none;}
+.video iframe{ width:100% !important; height:400px !important;}
+.how-trilongo-c .heading{ padding: 6% 0;}
+.parallax.bg1{ height: 605px;}
+.o-providers{ width: 362px;}
+.o-providers .heading{ width:100%; background: url("../images/our-p-arrow.png") no-repeat scroll center 44px hsla(0, 0%, 0%, 0)}
+.o-providers .heading h3{  font-size: 21px;}
+.o-providers .heading i{padding-top: 0;}
+.o-providers .p-r-c{ width:100%;}
+.o-providers .p-r-i{  margin-top: 10px; width: 100%;}
+.o-providers .p-r-i img{ width:100%;}
+#footer .f-panel{ float:none; padding-right: 29px; padding-top: 3%; vertical-align: top; width: 344px; display: inline-block;}
+#footer .s-f-r,#footer .s-f-l{ width:50%;}
+#footer .s-f-l .copyrights ul li{font-size:13px;}	
+#footer .s-f-l .copyrights ul li a{font-size:13px;}
+#footer .s-f-r .pay-icon img{ width:62px;}
+#footer .s-f-r ul li a img{width:105px;}
+.textbox{width: 343px;}
+.r-profile-c{width:77%;}
+.c-i-d{display:none;}
+.c-i-l{width: 97%;margin: 10px; padding:0px; border-bottom: 1px solid #B6C5D6;}
+.c-i-l{padding-bottom: 9px;}
+.c-i-r{padding: 0 10px 10px;}
+.download-link{ padding: 11px;  width: 629px;}
+.hm_input{ padding-right: 28px;}
+.slider_info{padding-bottom:2%;}
+.skdslider{ height: 279px;}
+#need-ride h3{font-size: 28px;}
+
+.drv_name{ width: 160px; text-align:center; height: 52px;}
+.phone_numbr{ width:144px;text-align:center;  height: 52px;}
+.addrs{ width:227px;text-align:center; height: 52px;}
+
+.new_srvs_list .addrs { width: 180px; text-align:center; height: 52px;}
+.action_bar a{padding: 4px 8px;  font-size:13px;}
+.action_bar{ width:118px; text-align:center; height: 52px;}
+.content_row .action_bar{padding: 6px 3px;}
+.book-taxi-c .pickup:nth-child(3n) .formError {left: 547px !important;}
+.book-taxi-c .pickup-d:nth-child(5n) .formError {left: 547px !important;}
+.company-info-c .c-i-l-link a{width: 24%; margin: 0 3px;}
+.providers_profile{margin: 45px 0 15px 0;}
+.r-profile-c .user-info p{font-size:14px !important; }
+.new_pad{ margin-bottom: 28px;}
+.ser_res{  width: 30%; margin: 0 5px;}
+.ser_res .input{ width: 56%;}
+.service_info_box{margin:0;}
+
+
+.label, .edit-label, .value, .edit-text{font-size:13px;}
+.edit-label{padding-right: 5px;}
+.accepted-f{margin-bottom: 11%;}
+
+.company-edit .btn-submit input[type="submit"]{margin: 25px 0 2%;}
+
+.textarea{width:94%;}
+.selects{width:100%;}
+
+#UserAgentSignUpForm .field:nth-child(2n)  .formError{left:198px!important;}
+#UserAgentSignUpForm .field:nth-child(3)  .formError{left:582px!important;}
+#UserAgentSignUpForm .field:nth-child(5)  .formError{left:582px!important;}
+#UserAgentSignUpForm .field:nth-child(7)  .formError{left:582px!important;}
+.map_view_top .field input, .reservation-from #ReservationBookForm input[type="text"]{width: 92% !important;}
+#suggested_provider .skip_provider{float:left;}
+
+
+.payment_pg .input_field{margin: 0 34px 10px 0;}
+.input_field_in{margin: 0 30px 0 0;}
+.input_field_in:nth-child(4){width:120px;}
+#suggested_provider_put_price .min_price{width:60%;}
+
+#suggested_provider_put_price .min_price{width:100%;}
+.put_your_price .min_price .type{padding-left: 71px; width: 35%;}
+.put_your_price .form_btm_btn .submit .h_f_b{ padding: 4px 70px;}
+.download-link .e-phone-n .formError{left: 100px !important;}
+.btn-submit input[type="submit"]{font-size:20px;}
+
+} 
+
+/*---------------------------------------------992 To 1024 View Css Start-----------------------------------------------------*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+.main-div{ width:980px;}
+header .logo img{ width:100%;}
+header .logo{ width:200px;}	
+.right-top{  margin: 0 0 0 15px; width: 754px;}	
+.mobile_menu{  margin-top: 10px; padding: 5px 18px;  margin-bottom: 3px;}
+.video iframe{ width:100% !important; height:400px !important;}
+.how-trilongo-c .heading{ padding: 6% 0;}
+.parallax.bg1{ height: 605px;}
+.o-providers{ width: 481px;}
+.o-providers .heading{ width:100%; background: url("../images/our-p-arrow.png") no-repeat scroll center 44px hsla(0, 0%, 0%, 0)}
+.o-providers .heading h3{  font-size: 21px;}
+.o-providers .heading i{padding-top: 0;}
+.o-providers .p-r-c{ width:265px;}
+.o-providers .p-r-i img{ width:100%;}
+#footer .f-panel{ float:none; padding-right: 22px; padding-top: 3%; vertical-align: top; width: 220px; display: inline-block;}
+#footer .s-f-r{ width:58%;}
+#footer .s-f-l
+{ width:40%;}	
+
+.drv_name{ width: 247px;}
+.phone_numbr{ width:150px;}
+.addrs{ width:405px;}
+.action_bar{ width:151px;}
+#footer .s-f-r .pay-icon{padding: 1% 0;}
+.providers_profile{ margin: 45px 0 15px;}
+.r-profile-c .user-info p{font-size:15px !important; }
+.new_pad{ margin-bottom: 25px;}
+.edit-label{font-size:13px;}
+	
+	#UserAgentSignUpForm .field:nth-child(2n)  .formError{left:324px!important;}
+#UserAgentSignUpForm .field:nth-child(3)  .formError{left:827px!important;}
+#UserAgentSignUpForm .field:nth-child(5)  .formError{left:827px!important;}
+#UserAgentSignUpForm .field:nth-child(7)  .formError{left:827px!important;}
+
+.reservation-from #ReservationBookForm input[type="text"]{width:92%;}
+
+
+}
+
+
+
+/*---------------------------------------------320 To 767 View Css Start-----------------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+.mobile_menu{ display:block;}
+.right-top .s-country .select,
+#open_menu{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.right-top .s-country .select{ width:100%;}
+#open_menu{ display:none; position:absolute; top: 45px; width:200px; background:#fff; padding:10px; right:0; z-index: 99999;}
+.right-top nav ul li a:hover, .right-top nav ul li.active a{ background:#E56823; color:#fff;}	
+.right-top nav ul li{ padding:0px; display:block;}
+.right-top nav ul li a{ padding:4px; display:block;}
+}

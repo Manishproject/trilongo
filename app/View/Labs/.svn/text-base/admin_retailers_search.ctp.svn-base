@@ -1,0 +1,32 @@
+
+<?php if(!empty($all)){
+	foreach ($all as $list){?>
+<tr class="odd gradeX">
+	<td><?php echo $list['Retailer']['id'];?></td>
+	<td><?php echo $list['Retailer']['business_name'];?></td>
+	<td class="hidden-480"><?php if($list['Retailer']['medical'] == 0){ echo "No";}else { echo "Yes";}?></td>
+	<td class="hidden-480"><?php if($list['Retailer']['recreational'] == 0){ echo "No";}else { echo "Yes";}?></td>
+	<td class="hidden-480"><?php echo $list['User']['first_name'];?></td>
+	<td class="hidden-480"><?php echo $list['User']['email'];?></td>
+	<td class="hidden-480"><?php echo $list['Retailer']['city'];?></td>
+	<td class="hidden-480"><?php echo $list['Retailer']['state'];?></td>
+	<td class="hidden-480"><?php if(!empty($list['Retailer']['business_license'])) echo $this->Html->link($list['Retailer']['business_license'], SITEURL."data/retailer_data/".$list['Retailer']['business_license'],array('target'=>'_blank'));?></td>
+	<td class="hidden-480"><?php if(!empty($list['Retailer']['id_proof'])) echo $this->Html->link($list['Retailer']['id_proof'], SITEURL."data/retailer_data/".$list['Retailer']['id_proof'],array('target'=>'_blank'));?></td>
+	<td class="hidden-480"><?php 
+	if($list['Retailer']['status'] == 0){ echo '<span class="label label-info">Pending</span>';}
+	elseif($list['Retailer']['status'] == 1){ echo '<span class="label label-success">Active</span>';}
+	elseif($list['Retailer']['status'] == 2){ echo '<span class="label label-danger">Deactivate</span>';}
+	elseif($list['Retailer']['status'] == 3){ echo '<span class="label label-danger">Unapprove</span>';}
+	else{ echo "Not available"; }
+	?></td>
+
+	<td class="hidden-480"><?php echo $this->Lab->ShowDate($list['Retailer']['created']);?></td>
+	<td><a
+		href="<?php echo SITEURL."admin/labs/review_retailers/".$list['Retailer']['id']?>"
+		class="btn mini green-stripe">View</a></td>
+</tr>
+	<?php }}else{?>
+<tr>
+	<td colspan="12" class="mid">record not found</td>
+</tr>
+	<?php }?>

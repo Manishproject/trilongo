@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/fkb/!svn/ver/70/tags/app/Plugin/Mails/View/Mails
+END
+admin_mail_search.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/fkb/!svn/ver/19/tags/app/Plugin/Mails/View/Mails/admin_mail_search.ctp
+END
+admin_new.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/fkb/!svn/ver/70/tags/app/Plugin/Mails/View/Mails/admin_new.ctp
+END
+admin_index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/fkb/!svn/ver/70/tags/app/Plugin/Mails/View/Mails/admin_index.ctp
+END

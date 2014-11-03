@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/guestnest/!svn/ver/2/app/Vendor/sms/Services
+END
+Twilio.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/Twilio.php
+END
+cacert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/guestnest/!svn/ver/2/app/Vendor/sms/Services/cacert.pem
+END

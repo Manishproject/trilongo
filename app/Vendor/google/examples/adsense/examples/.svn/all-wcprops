@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples
+END
+GetAllMetrics.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllMetrics.php
+END
+GetAllDimensions.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllDimensions.php
+END
+GetAllAdClients.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllAdClients.php
+END
+GenerateReportWithPaging.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GenerateReportWithPaging.php
+END
+GetAllAdClientsForAccount.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllAdClientsForAccount.php
+END
+GetAllAdUnits.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllAdUnits.php
+END
+GetAllSavedAdStyles.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllSavedAdStyles.php
+END
+GenerateGeoChart.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GenerateGeoChart.php
+END
+GetAllAlerts.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllAlerts.php
+END
+GetAllSavedReports.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllSavedReports.php
+END
+GetAllCustomChannelsForAdUnit.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllCustomChannelsForAdUnit.php
+END
+GenerateTableChart.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GenerateTableChart.php
+END
+GenerateSavedReport.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GenerateSavedReport.php
+END
+GeneratePieChart.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GeneratePieChart.php
+END
+GenerateReport.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GenerateReport.php
+END
+GetAllAdUnitsForCustomChannel.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllAdUnitsForCustomChannel.php
+END
+GetAllCustomChannels.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllCustomChannels.php
+END
+HandleAccountErrors.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/HandleAccountErrors.php
+END
+GetAllAccounts.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllAccounts.php
+END
+GenerateColumnChart.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GenerateColumnChart.php
+END
+GetAllUrlChannels.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAllUrlChannels.php
+END
+GetAccountTree.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GetAccountTree.php
+END
+GenerateLineChart.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsense/examples/GenerateLineChart.php
+END

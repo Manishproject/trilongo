@@ -1,0 +1,11 @@
+<section class="mid">
+<div class="warrper">
+	<!--User Box Start-->
+	<h1><?php echo $page['Page']['title'];?></h1>
+	<section class="your_listting_block">
+	<div class="bod">
+	<?php echo $page['Page']['post_data'];?>
+	</div>
+	</section>
+</div>
+</section>

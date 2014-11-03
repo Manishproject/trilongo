@@ -1,0 +1,147 @@
+   
+<!-- BEGIN PAGE -->  
+<div class="page-content">
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div id="portlet-config" class="modal hide">
+        <div class="modal-header">
+            <button data-dismiss="modal" class="close" type="button"></button>
+            <h3>portlet Settings</h3>
+        </div>
+        <div class="modal-body">
+            <p>Here will be a configuration form</p>
+        </div>
+    </div>
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->   
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h3 class="page-title"> Edit Deal</h3>
+
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="tabbable tabbable-custom boxless">
+
+
+                    <div class="tab-pane"  id="tab_4">
+                        <div class="portlet box blue">
+                            <div class="portlet-title">
+                                <h4><i class="icon-reorder"></i> Edit Deal </h4>
+                            </div>
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <?php
+                                echo $this->Form->create('ProductDeal', array('type' => 'file', 'novalidate', 'class' => 'form-horizontal form-row-seperated'));
+                                echo $this->Session->flash('msg');
+                                ?>
+                                <div class="control-group">
+                                    <label class="control-label">Deal Title</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('title', array('class' => 'm-wrap span12', 'label' => false)); ?>
+                                        <span class="help-inline">Enter Deal Title Here</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Deal Description</label>
+                                    <div class="controls">
+                                        <?php
+                                        echo $this->Form->input('description', array('class' => 'm-wrap span12', 'label' => false));
+                                        ?>
+                                        <span class="help-inline">Enter Deal Description</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Deal Start Date</label>
+                                    <div class="controls">
+                                        <?php
+                                        echo $this->Form->input('start_date', array('type' => 'text', 'class' => 'm-wrap span12 pick_up_time', 'label' => false));
+                                        ?>
+                                        <span class="help-inline">Enter Deal Start Date</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Deal End Date</label>
+                                    <div class="controls">
+                                        <?php
+                                        echo $this->Form->input('end_date', array('type' => 'text', 'class' => 'm-wrap span12 pick_up_time', 'label' => false));
+                                        ?>
+                                        <span class="help-inline">Enter Deal End Date</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="control-group">
+                                    <label class="control-label">Deal Image</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('deal_image', array('type' => "file", 'label' => false, 'class' => 'm-wrap span12')); ?>
+                                        <span class="help-block">Upload Deal image</span>
+                                        <div>
+                                            <?php
+                                            if (isset($this->request->data['ProductDeal']['deal_image']) && is_array($this->request->data['ProductDeal']['deal_image'])) {
+                                                $product_deal_image = $deal_data['ProductDeal']['deal_image'];
+                                            } else {
+                                                $product_deal_image = $this->request->data['ProductDeal']['deal_image'];
+                                            }
+                                            if (!empty($product_deal_image)) {
+
+                                                $path = realpath('data/deal_image/' . $product_deal_image);
+                                                if (file_exists($path)) {
+                                                    echo $this->Image->resize('data/deal_image/' . $product_deal_image, 75, 75, true, false);
+                                                } else {
+                                                    echo $this->Image->resize('data/deal_image/default.png', 75, 75, true, false);
+                                                }
+                                            }
+                                            ?> 
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn blue"><i class="icon-ok"></i> Save</button>
+                                    <!--<button type="button" class="btn">Cancel</button>
+                                    --></div>
+                                <?php echo $this->Form->end(); ?>
+                                <!-- END FORM-->  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->         
+    </div>
+    <!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->  
+
+
+<?php
+echo $this->Html->css(array('jquery-ui'));
+echo $this->Html->script(array('jquery-ui'));
+echo $this->Html->script(array('jquery-ui-timepicker-addon'));
+?>
+<script>
+
+    $(function() {
+        $('.pick_up_time').datetimepicker({
+            dateFormat: 'yy-mm-dd',
+            minDate: getFormattedDate(new Date())
+        });
+    })
+    function getFormattedDate(date) {
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear().toString().slice(2);
+        return day + '-' + month + '-' + year;
+    }
+
+</script>

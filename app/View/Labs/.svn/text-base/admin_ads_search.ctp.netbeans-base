@@ -1,0 +1,63 @@
+<?php
+if (!empty($all_ads)) {
+    foreach ($all_ads as $ad) {
+        ?>
+        <tr class="odd gradeX">
+            <td><?php echo $ad['Ad']['id']; ?></td>
+            <td>
+                <?php
+                $ad_image = $ad['Ad']['image'];
+                $path = realpath('data/advertise_image/' . $ad_image);
+                if (!empty($ad_image)) {
+                    if (file_exists($path)) {
+                        echo $this->Image->resize('data/advertise_image/' . $ad_image, 75, 75, true, false);
+                    } else {
+                        echo $this->Image->resize('data/advertise_image/default.jpg', 75, 75, true, false);
+                    }
+                } else {
+                    echo "...";
+                }
+                ?> 
+            </td>
+            <td class="hidden-480"><?php echo $ad['Ad']['title'] ?></td>
+            <td class="hidden-480"><?php echo substr($ad['Ad']['description'], 0, 20); ?></td>
+            <td class="hidden-480">
+                <?php echo $this->Html->link($ad['Ad']['link'], $ad['Ad']['link'], array('target' => '_blank')); ?></td>
+            <td class="hidden-480" id="<?php echo "st_" . $ad['Ad']['id']; ?>">
+                <?php
+                if ($ad['Ad']['status'] == 0) {
+                    echo "Deactivate";
+                } elseif ($ad['Ad']['status'] == 1) {
+                    echo "Active ";
+                } elseif ($ad['Ad']['status'] == 2) {
+                    echo "Deactive by user ";
+                } else {
+                    echo "Not available";
+                }
+                ?>
+            </td>
+            <td class="hidden-480"><?php echo $this->Lab->ShowDate($ad['Ad']['created']); ?></td>
+            <td >
+                <div class="btn-group">
+                    <a data-toggle="dropdown" href="#" class="btn purple">
+                        <i class="icon-user"></i> Settings
+                        <i class="icon-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ><?php echo $this->Html->link('<i class="icon-plus"></i> Edit', array('controller' => 'labs', 'action' => 'edit_ads/' . $ad['Ad']['id']), array('class' => '', 'escape' => false)); ?></li>
+                        <?php if ($ad['Ad']['status'] == 0) { ?>
+                            <li id="<?php echo "sp_" . $ad['Ad']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $ad['Ad']['id']; ?>, 1)"><i class="icon-remove"></i> <span>Active</span> </a></li>
+                        <?php } elseif ($ad['Ad']['status'] == 1) { ?>
+                            <li id="<?php echo "sp_" . $ad['Ad']['id']; ?>"><a href="javascript:void(0);" onclick="change_status(<?php echo $ad['Ad']['id']; ?>, 0)"><i class="icon-remove"></i> <span>Deactivate</span> </a></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <?php
+    }
+} else {
+    ?> 
+    <tr><td colspan="12" class="mid"> No Ad  found </td></tr>
+<?php } ?>
+

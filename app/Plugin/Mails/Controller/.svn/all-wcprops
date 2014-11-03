@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/fkb/!svn/ver/110/tags/app/Plugin/Mails/Controller
+END
+MailsController.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/fkb/!svn/ver/110/tags/app/Plugin/Mails/Controller/MailsController.php
+END
+MailsAppController.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/fkb/!svn/ver/19/tags/app/Plugin/Mails/Controller/MailsAppController.php
+END

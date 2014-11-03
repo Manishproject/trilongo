@@ -1,0 +1,374 @@
+      <!-- BEGIN PAGE -->  
+      <div class="page-content">
+         <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+         <div id="portlet-config" class="modal hide">
+            <div class="modal-header">
+               <button data-dismiss="modal" class="close" type="button"></button>
+               <h3>portlet Settings</h3>
+            </div>
+            <div class="modal-body">
+               <p>Here will be a configuration form</p>
+            </div>
+         </div>
+         <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+         <!-- BEGIN PAGE CONTAINER-->
+         <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->   
+            <div class="row-fluid">
+               <div class="span12">
+                  <h3 class="page-title"> Retailer's Details <small></small>
+                  </h3>
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+            <div class="row-fluid">
+               <div class="span12">
+                  <div class="tabbable tabbable-custom boxless">
+                     
+                     <div class="tab-content2">
+                     <?php if(!empty($data)){?>
+                     <div class="tab-pane ">
+                           <div class="portlet box blue">
+                              <div class="portlet-title">
+                                 <h4><i class="icon-reorder"></i><?php echo h($data['Retailer']['business_name']);?> </h4>
+                 
+                              </div>
+                              <div class="portlet-body form">
+                              <?php echo $this->Session->flash('msg');?>
+                              <div id="lab_data"></div>
+                                 <!-- BEGIN FORM-->
+                                 <div class="form-horizontal form-view">
+                                    <h3> </h3>
+                                    <h3 class="form-section">User Info</h3>
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" for="firstName">First Name:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['User']['first_name']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" for="lastName">Last Name:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['User']['last_name']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                    </div>
+                                    <!--/row-->
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Gender:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['User']['sex']);?></span> 
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Date of Birth:</label>
+                                             <div class="controls">
+                                                <span class="text bold"><?php if(!empty($data['User']['dob']))
+                                                { echo date('m/d/Y',strtotime(h($data['User']['dob']))); }?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                    </div>
+                                    <!--/row-->        
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Email Address:</label>
+                                             <div class="controls">
+                                                <span class="text bold"><?php echo h($data['User']['email']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Phone number:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php echo h($data['User']['std_code']." ".$data['User']['mobile']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                    </div>
+                                    <!--/row-->                               
+                                    <h3 class="form-section">Retailer Info</h3>
+                                    <div class="row-fluid">
+                                       <div class="span12 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Street:</label>
+                                             <div class="controls">
+                                                <span class="text">#<?php echo h($data['Retailer']['address']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >City:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['Retailer']['city']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6">
+                                          <div class="control-group">
+                                             <label class="control-label" >State:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['Retailer']['state']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                    </div>
+                                    <!--/row-->           
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Post Code:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['Retailer']['zip']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Country:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['Retailer']['country']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                       
+                                       
+                                         <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Business License:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php 
+                                                if(!empty($data['Retailer']['business_license'])) 
+                                                echo $this->Html->link($data['Retailer']['business_license'], SITEURL."data/retailer_data/".$data['Retailer']['business_license'],array('target'=>'_blank'));
+                                                ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >ID Proof:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php 
+                                                if(!empty($data['Retailer']['id_proof'])) 
+                                                echo $this->Html->link($data['Retailer']['id_proof'], SITEURL."data/retailer_data/".$data['Retailer']['id_proof'],array('target'=>'_blank'));
+                                                ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                       <!--/span-->
+                                       
+                                  
+                                  
+                                    <h3 class="form-section"> &nbsp</h3>
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" for="firstName">Business Name:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['Retailer']['business_name']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" for="lastName">Business URL:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['Retailer']['business_url']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                    </div>
+                                    <!--/row-->
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Business Email:</label>
+                                             <div class="controls">
+                                                <span class="text"><?php echo h($data['Retailer']['business_email']);?></span> 
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Business Phone:</label>
+                                             <div class="controls">
+                                                <span class="text bold"><?php echo h($data['Retailer']['business_country_code']." ".$data['Retailer']['business_phone']); ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                    </div>
+                                    <!--/row-->        
+                                    <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Business Type:</label>
+                                             <div class="controls">
+                                                <span class="text bold"><?php 
+                                                if($data['Retailer']['recreational'] == 1 && $data['Retailer']['medical'] == 1){ echo "Medical,Recreational"; }
+                                                elseif($data['Retailer']['medical'] == 1){ echo 'Medical'; }
+                                                elseif($data['Retailer']['recreational'] == 1){ echo 'Recreational'; }
+                                                
+                                                ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!--/span-->
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Fax number:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php echo h($data['Retailer']['fax_number']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                       
+                                       <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Website:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php  echo $this->Html->link($data['Retailer']['website'], $data['Retailer']['website'],array('target'=>'_blank')); ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Facebook:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php 
+                                                echo $this->Html->link("http://facebook.com/".$data['Retailer']['facebook_link'], "http://facebook.com/".$data['Retailer']['facebook_link'],array('target'=>'_blank'));?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                       <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Twitter:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php 
+                                                echo $this->Html->link("http://twitter.com/".$data['Retailer']['twitter_link'],"http://twitter.com/".$data['Retailer']['twitter_link'],array('target'=>'_blank')); ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Fax number:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php echo h($data['Retailer']['fax_number']);?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                       <div class="row-fluid">
+                                       <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Google:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php  echo $this->Html->link("https://plus.google.com/u/0/".$data['Retailer']['google_link'],"https://plus.google.com/u/0/".$data['Retailer']['google_link'],array('target'=>'_blank')); ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       
+                                             <div class="span6 ">
+                                          <div class="control-group">
+                                             <label class="control-label" >Pinterest:</label>
+                                             <div class="controls">                                                
+                                                <span class="text bold"><?php 
+                                                echo $this->Html->link("http://pinterest.com/".$data['Retailer']['pinterest_link'],"http://pinterest.com/".$data['Retailer']['pinterest_link'],array('target'=>'_blank')); ?></span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       </div>
+                                       <!--/span-->
+                                    </div>
+                                    <div class="form-actions">
+                                    <?php if($data['Retailer']['status'] == 0){?>
+                                    <a class="btn blue" href="javascript:void(0);" onclick="approve(<?php echo $data['Retailer']['id'];?>,1)" ><i class="icon-plus"></i> Approve</a>
+                                    <button type="button" class="btn blue" onclick="approve(<?php echo $data['Retailer']['id'];?>,3)"><i class="icon-pencil"></i> Decline</button>
+                                    <?php }
+                                    else{?>
+                                    <?php }?>
+                                    
+                                    <?php echo $this->Html->link('Back', '/admin/labs/new_retailer_request',array('class'=>'btn'));?>
+                                    </div>
+                                 </div>
+                                 <!-- END FORM-->  
+                              </div>
+                           </div>
+                        </div>
+
+<script type="text/javascript">
+	function approve(id,type)
+	{
+		
+		var datastring = "id="+id+"&type="+type+"";
+		$(function() {
+	        $.ajax({type: 'POST',
+	            url: '<?php echo SITEURL;?>admin/labs/change_status/',
+	            data: datastring,
+	            success: function(data) {
+	                $("#lab_data").html(data);
+	            },error: function(comment) { $("#lab_data").html(comment); }});
+	    });	
+		
+	}
+	
+</script>
+                      
+                     <?php }else{?>
+                     
+                     <div class="alert alert-block alert-error fade in">
+									<button data-dismiss="alert" class="close" type="button"></button>
+									<h4 class="alert-heading">Error!</h4>
+									<p>Retailer not found.									</p>
+									
+								</div>
+                     
+                     
+                     <?php }?>   
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- END PAGE CONTENT-->         
+         </div>
+         <!-- END PAGE CONTAINER-->
+      </div>
+   

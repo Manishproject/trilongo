@@ -1,0 +1,236 @@
+   
+<!-- BEGIN PAGE -->  
+<div class="page-content">
+    <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <div id="portlet-config" class="modal hide">
+        <div class="modal-header">
+            <button data-dismiss="modal" class="close" type="button"></button>
+            <h3>portlet Settings</h3>
+        </div>
+        <div class="modal-body">
+            <p>Here will be a configuration form</p>
+        </div>
+    </div>
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->   
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h3 class="page-title"><?php
+                    if (isset($this->request->data['User']['id'])) {
+                        echo "Edit";
+                    } else {
+                        echo "Create New";
+                    }
+                    ?> User
+                </h3>
+
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="tabbable tabbable-custom boxless">
+
+
+                    <div class="tab-pane"  id="tab_4">
+                        <div class="portlet box blue">
+                            <div class="portlet-title">
+                                <h4>
+                                    <i class="icon-reorder"></i>   Edit User
+                                </h4>
+                            </div>
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                                <?php
+                                echo $this->Form->create('User', array('class' => 'form-horizontal form-row-seperated'));
+                                if (isset($this->request->data['User']['id']) && !empty($this->request->data['User']['id'])) {
+                                    echo $this->Form->hidden('id');
+                                }
+
+                                echo $this->Session->flash('msg');
+                                ?>
+
+
+                                <div class="control-group">
+                                    <label class="control-label">Email Address</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('email', array('class' => 'm-wrap span12', 'label' => false)); ?>
+                                        <span class="help-inline">Enter the user's email.</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="control-group">
+                                    <label class="control-label">User Name</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('username', array('class' => 'm-wrap span12', 'label' => false)); ?>
+                                        <span class="help-inline">Enter the user's user name. This will be used to log in to the site.</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label">First Name</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('first_name', array('class' => 'm-wrap span12', 'label' => false)); ?>
+                                        <span class="help-inline">Enter the user's First Name.</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label">Last Name</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('last_name', array('class' => 'm-wrap span12', 'label' => false)); ?>
+                                        <span class="help-inline">Enter the user's Last Name.</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label">Gender</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('sex', array('options' => array('male' => 'Male', 'female' => 'Female'), 'empty' => 'Select sex', 'label' => false, 'class' => 'm-wrap span12', 'required' => false,)); ?>
+                                        <span class="help-block">Select user's gender.</span>
+                                    </div>
+                                </div>
+
+
+                                <!--// address section start--> 
+
+
+
+
+                                <div class="control-group">
+                                    <label class="control-label">Street Address</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('address', array('label' => false, 'class' => 'm-wrap span12')); ?>
+                                        <span class="help-block">Select User Street Address.</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Country</label>
+                                    <div class="controls">
+                                        <?php
+                                        echo $this->Form->input('country_id', array('options' => $this->Lab->WorldData(), 'empty' => 'Select Country', 'label' => false, 'class' => 'm-wrap span12 country_select'));
+                                        echo $this->Form->hidden('country_name', array('class' => 'country_name'));
+                                        ?>
+
+                                        <span class="help-block">Select your country.</span>
+                                    </div>
+                                </div> 
+                                <div class="control-group">
+                                    <label class="control-label">State</label>
+                                    <div class="controls">
+                                        <?php
+                                        $state_list = array();
+                                        if (isset($this->request->data['User']['country_id']) && !empty($this->request->data['User']['country_id'])) {
+                                            $state_list = $this->Lab->WorldData($this->request->data['User']['country_id']);
+                                        }
+                                        echo $this->Form->input('state_id', array('options' => $state_list, 'default' => $this->request->data['User']['state_id'], 'empty' => 'Select State', 'label' => false, 'class' => 'm-wrap span12 state_select', 'required' => false,));
+                                        echo $this->Form->hidden('state_name', array('class' => 'state_name'));
+                                        ?>
+                                        <span class="help-block">Select User state.</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">City</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('city', array('label' => false, 'class' => 'm-wrap span12', 'required' => false)); ?>
+                                        <span class="help-block">Select User city.</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Zip</label>
+                                    <div class="controls">
+                                        <?php echo $this->Form->input('zip', array('label' => false, 'class' => 'm-wrap span12', 'required' => false)); ?>
+                                        <span class="help-block">Select User Zip code.</span>
+                                    </div>
+                                </div>
+                                <!--// address section end--> 
+
+                                <div class="control-group">
+                                    <label class="control-label" >Phone Number</label>
+                                    <div class="controls">
+                                        <?php
+                                        echo $this->Form->input('std_code', array('placeholder' => 'Country Code', 'class' => 'm-wrap small std_code', 'label' => false, 'div' => false, 'maxLength' => 4, 'required' => false));
+                                        echo $this->Form->input('mobile', array('placeholder' => 'Phone number', 'class' => 'm-wrap small', 'label' => false, 'div' => false, 'maxLength' => 10, 'required' => false));
+                                        ?>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" >Date of Birth</label>
+                                    <div class="controls">
+                                        <?php
+                                        echo $this->Form->input('dob', array('class' => 'small m-wrap', 'label' => false, 'empty' => 'select', 'dateFormat' => 'MDY', 'minYear' => date('Y') - 70, 'maxYear' => date('Y') - 18));
+                                        ?>
+                                        <span class="help-block">Please enter the user's date of birth in this format: MM/DD/YYYY. (i.e.: July 09 1973).</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn blue"><i class="icon-ok"></i> Save</button>
+                                </div>
+                                <?php echo $this->Form->end(); ?>
+                                <!-- END FORM-->  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->         
+    </div>
+    <!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->  
+
+
+<script>
+    $(function() {
+        //  country change get state name and set hidden value in country name
+        $(".country_select").live("change", function() {
+            var element = $(this);
+            var element_id = $(this).attr("id");
+            var id = $(this).val();
+            var datastring = "id=" + id + "";
+            $.ajax({type: 'POST', async: false, dataType: 'json',
+                url: '<?php echo SITEURL; ?>users/state/',
+                data: datastring,
+                success: function(data) {
+                    $(".state_select option").remove();
+                    $.each(data, function(index, value) {
+                        $(".state_select")
+                                .append($("<option> Select State</option>")
+                                .attr("value", index)
+                                .text(value));
+
+                    });
+                    var country_name = $("#" + element_id + " option:selected").text();
+                    if ($.trim(country_name) == "United States") {
+                        $(".std_code").val("1")
+                    } else {
+                        if ($(".std_code").val() == 1) {
+                            $(".std_code").val('')
+                        }
+                    }
+                    $(".country_name").val(country_name)
+                },
+                error: function(comment) {
+                }});
+
+        });
+        $(".state_select").live("change", function() {
+            var element_id = $(this).attr("id");
+            var state_name = $("#" + element_id + " option:selected").text();
+            $(".state_name").val(state_name);
+        });
+    })
+
+
+</script>

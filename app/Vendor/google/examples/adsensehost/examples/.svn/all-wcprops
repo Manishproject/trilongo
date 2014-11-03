@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples
+END
+StartAssociationSession.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/StartAssociationSession.php
+END
+GetAllAdClientsForHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GetAllAdClientsForHost.php
+END
+AddUrlChannelToHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/AddUrlChannelToHost.php
+END
+AddAdUnitToPublisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/AddAdUnitToPublisher.php
+END
+GenerateReportForPublisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GenerateReportForPublisher.php
+END
+GetAllUrlChannelsForHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GetAllUrlChannelsForHost.php
+END
+GetAllCustomChannelsForHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GetAllCustomChannelsForHost.php
+END
+DeleteUrlChannelOnHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/DeleteUrlChannelOnHost.php
+END
+GenerateReportForHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GenerateReportForHost.php
+END
+GetAccountDataForExistingPublisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GetAccountDataForExistingPublisher.php
+END
+DeleteAdUnitOnPublisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/DeleteAdUnitOnPublisher.php
+END
+UpdateAdUnitOnPublisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/UpdateAdUnitOnPublisher.php
+END
+GetAllAdClientsForPublisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GetAllAdClientsForPublisher.php
+END
+VerifyAssociationSession.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/VerifyAssociationSession.php
+END
+DeleteCustomChannelOnHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/DeleteCustomChannelOnHost.php
+END
+UpdateCustomChannelOnHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/UpdateCustomChannelOnHost.php
+END
+AddCustomChannelToHost.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/AddCustomChannelToHost.php
+END
+GetAllAdUnitsForPublisher.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/guestnest/!svn/ver/2923/app/Vendor/google/examples/adsensehost/examples/GetAllAdUnitsForPublisher.php
+END

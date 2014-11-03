@@ -1,0 +1,165 @@
+<link rel="stylesheet" href="<?php echo SITEURL; ?>assets/data-tables/DT_bootstrap.css"/>
+
+
+<!-- BEGIN PAGE -->
+<div class="page-content">
+
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="row-fluid">
+            <div class="span12">
+
+                <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                <h3 class="page-title">Payment Details
+                    <small></small>
+                </h3>
+
+                <!-- END PAGE TITLE & BREADCRUMB-->
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet box light-grey">
+
+
+                    <div class="portlet-title">
+                        <h4><i class="icon-globe"></i>Manage</h4>
+
+                        <div class="tools">
+                            <!--<a class="collapse" href="javascript:;"></a>
+                            <a class="config" data-toggle="modal" href="#portlet-config"></a>
+                            <a class="reload" href="javascript:;"></a>
+                            <a class="remove" href="javascript:;"></a>
+                        --></div>
+                    </div>
+
+                    <div id="LabMsg"></div>
+                    <?php echo $this->Session->flash('msg'); ?>
+                    <div class="portlet-body">
+                        <div class="dataTables_filter" id="sample_1_filter">
+                            <script>
+                                $(document).ready(function () {
+                                    $('#LabMsg').html('');
+                                    $("#labs_ajax_search_btn").click(function (e) {
+                                        call($("#labs_ajax_search").val());
+                                    });
+                                    $('#labs_ajax_search').live('keypress', function (e) {
+                                        var p = e.which;
+                                        if (p == 13) {
+                                            call($("#labs_ajax_search").val());
+                                        }
+                                    });
+                                    function call(txt) {
+                                        var datastring = "mssg=" + txt + "&from=retailers&type=all";
+                                        $("#LabMsg").html('');
+                                        $("#labs_ajax_search_btn").text('Searching...');
+                                        $(function () {
+                                            $.ajax({type: 'POST',
+                                                url: '<?php echo SITEURL;?>admin/labs/reservations_search/',
+                                                data: datastring,
+                                                success: function (data) {
+                                                    $("#labs_ajax_search_btn").text('Search!');
+                                                    $("#AllUsers").html(data);
+                                                },
+                                                error: function (comment) {
+                                                }});
+                                        });
+
+                                        //	}
+                                    }
+                                });
+                            </script>
+                            <label>Search: <input type="text" class="m-wrap" id="labs_ajax_search">
+                                <button id="labs_ajax_search_btn" type="button" class="btn green">Search!</button>
+                            </label>
+
+                        </div>
+
+
+                        <table class="table table-striped table-bordered table-hover" id="sample_1">
+                            <thead>
+                            <tr>
+                                <th><?php echo $this->Paginator->sort('Reservation.id', 'ID'); ?></th>
+                                <th><?php echo $this->Paginator->sort('Reservation.pick_up_code', 'Pick up code'); ?></th>
+                                <th class="hidden-480"><?php echo $this->Paginator->sort('Retailer.business_name', 'Retailer'); ?></th>
+                                <th class="hidden-480"><?php echo $this->Paginator->sort('User.first_name', 'Consumer'); ?></th>
+                                <th class="hidden-480"><?php echo $this->Paginator->sort('Product.name', 'Product'); ?></th>
+                                <th class="hidden-480"><?php echo $this->Paginator->sort('Reservation.qty', 'Quantity'); ?></th>
+                                <th class="hidden-480"><?php echo $this->Paginator->sort('Reservation.status', 'Status'); ?></th>
+                                <th class="hidden-480"><?php echo $this->Paginator->sort('Reservation.created', 'Created'); ?></th>
+                                <th class="hidden-480">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody id="AllUsers">
+
+                            <?php if (!empty($all)) {
+                                foreach ($all as $list) { //ec($list);
+                                    ?>
+                                    <tr class="odd gradeX">
+                                        <td> <?php echo $list['Reservation']['id']; ?></td>
+                                        <td> <?php echo $list['Reservation']['pick_up_code']; ?></td>
+
+                                        <td class="hidden-480"><?php echo $list['Retailer']['business_name']; ?></td>
+                                        <td class="hidden-480"><?php echo $list['User']['first_name']; ?></td>
+                                        <td class="hidden-480"><?php echo $list['Product']['name']; ?></td>
+                                        <td class="hidden-480"><?php echo $list['Reservation']['qty']; ?></td>
+
+                                        <td class="hidden-480"><?php
+                                            if ($list['Reservation']['status'] == 1) {
+                                                echo __('Reserve');
+                                            } elseif ($list['Reservation']['status'] == 2) {
+                                                echo __('Approved');
+                                            } elseif ($list['Reservation']['status'] == 3) {
+                                                echo __('Declined by Retailers');
+                                            } elseif ($list['Reservation']['status'] == 4) {
+                                                echo __('Cancelled By Consumer');
+                                            } elseif ($list['Reservation']['status'] == 5) {
+                                                echo __('Declined By Admin');
+                                            } else {
+                                                echo __('Pending');
+                                            } ?></td>
+                                        <td class="hidden-480"><?php echo $this->Lab->ShowDate($list['Reservation']['created']); ?></td>
+                                        <td>
+                                            <?php
+                                            if ($list['Reservation']['status'] == 0 || $list['Reservation']['status'] == 1 || $list['Reservation']['status'] == 2) {
+                                                echo $this->Html->link('Decline', array('controller' => 'labs', 'action' => 'reservtion_cancel/' . $list['Reservation']['id']), array('class' => '', 'escape' => false));
+                                            }
+                                            ?>
+                                        </td>
+                                    </tr>
+                                <?php
+                                }
+                            } else {
+                                ?>
+                                <tr>
+                                    <td colspan="9" class="mid"> record not found</td>
+                                </tr>
+                            <?php } ?>
+
+
+                            </tbody>
+                        </table>
+
+                        <div class="span6">
+                            <div class="pagination pagination-large">
+                                <?php echo $this->Paginator->numbers(array('first' => 2, 'last' => 2)); ?>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+
+        <!-- END PAGE CONTENT-->
+    </div>
+    <!-- END PAGE CONTAINER-->
+</div>
+<!-- END PAGE -->
+	
+	
